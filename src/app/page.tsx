@@ -14,14 +14,14 @@ import FloatingActions from '@/components/home-modern/FloatingActions';
 import styles from './home.module.css';
 
 export const metadata: Metadata = {
-  title: 'Código Nexo | Ingeniería de Software para Empresas',
-  description: 'Código Nexo diseña, construye e integra software empresarial, plataformas web, automatizaciones y arquitectura cloud para operaciones que necesitan evolucionar con claridad técnica.',
+  title: 'Código Nexo | Diseño, multimedia, páginas web y aplicaciones',
+  description: 'Diseño gráfico, multimedia, presentaciones, páginas web y aplicaciones para personas, profesionales y negocios. Servicios individuales o combinados en un mismo proyecto.',
   alternates: {
     canonical: 'https://codigonexo.mx/',
   },
   openGraph: {
-    title: 'Código Nexo | Ingeniería de Software para Empresas',
-    description: 'Soluciones de software, web, automatización, integraciones y cloud para entornos empresariales.',
+    title: 'Código Nexo | Diseño, multimedia, páginas web y aplicaciones',
+    description: 'Diseño, multimedia, páginas web y aplicaciones para dar forma a tu proyecto digital.',
     url: 'https://codigonexo.mx/',
     siteName: 'Código Nexo',
     type: 'website',
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Código Nexo | Ingeniería de Software para Empresas',
-    description: 'Soluciones de software, web, automatización, integraciones y cloud para entornos empresariales.',
+    title: 'Código Nexo | Diseño, multimedia, páginas web y aplicaciones',
+    description: 'Diseño, multimedia, páginas web y aplicaciones para dar forma a tu proyecto digital.',
     images: ['https://codigonexo.mx/assets/images/og-image.jpg'],
   },
 };
@@ -47,88 +47,28 @@ const references = ['Su Voz a Diario', 'Club Colombia FC', 'Joga Bonito', 'Esdra
 const technologies = ['Next.js', 'React', 'Node.js', 'Firebase', 'AWS', 'Python'];
 
 const services = [
-  {
-    title: 'Desarrollo de software',
-    text: 'Plataformas empresariales diseñadas para integrarse con procesos, datos y operación real.',
-    href: '/servicios/desarrollo-software',
-    icon: 'Code',
-  },
-  {
-    title: 'Desarrollo web',
-    text: 'Aplicaciones web rápidas, mantenibles y preparadas para crecer con el producto.',
-    href: '/servicios/desarrollo-web',
-    icon: 'Globe',
-  },
-  {
-    title: 'APIs e integraciones',
-    text: 'Conexión entre sistemas internos, SaaS, plataformas legacy y servicios externos.',
-    href: '/servicios/apis-e-integraciones',
-    icon: 'Network',
-  },
-  {
-    title: 'Automatización',
-    text: 'Flujos operativos que reducen trabajo manual y ayudan a ordenar procesos repetitivos.',
-    href: '/servicios/automatizacion',
-    icon: 'Bot',
-  },
-  {
-    title: 'Arquitectura cloud',
-    text: 'Infraestructura cloud con criterios de seguridad, continuidad y capacidad de evolución.',
-    href: '/servicios/arquitectura-cloud',
-    icon: 'Cloud',
-  },
-  {
-    title: 'Consultoría tecnológica',
-    text: 'Diagnóstico técnico para tomar mejores decisiones sobre arquitectura y deuda técnica.',
-    href: '/servicios/consultoria-tecnologica',
-    icon: 'Layers',
-  },
+  { title: 'Diseño gráfico', text: 'Piezas para redes sociales, material promocional y diseño visual para comunicar tus servicios.', href: '#contacto', icon: 'Palette' },
+  { title: 'Multimedia y audio', text: 'Edición de audio y contenido multimedia para cursos, presentaciones y proyectos digitales.', href: '#contacto', icon: 'AudioLines' },
+  { title: 'Páginas web', text: 'Páginas de servicios, portafolios y sitios adaptados a celulares para que puedan conocerte y contactarte.', href: '/servicios/desarrollo-web', icon: 'Globe' },
+  { title: 'Aplicaciones y software', text: 'Herramientas a la medida para organizar información y resolver tareas. Definimos una primera versión con alcance concreto.', href: '/servicios/desarrollo-software', icon: 'Code' },
+  { title: 'Presentaciones editables', text: 'Organización de contenido y diseño en PowerPoint. Consulta el paquete de hasta 12 diapositivas y su muestra.', href: '/presentaciones', icon: 'Presentation' },
+  { title: 'Automatización e integraciones', text: 'Conecta herramientas y reduce tareas repetitivas mediante flujos acordados para tu proyecto.', href: '/servicios/automatizacion', icon: 'Bot' },
 ] as const;
 
 const processSteps = [
-  {
-    title: 'Arquitectura',
-    description: 'Definimos estructura técnica, datos, integraciones y criterios de evolución antes de construir.',
-  },
-  {
-    title: 'Desarrollo',
-    description: 'Construimos de forma modular, con repositorios organizados y decisiones técnicas trazables.',
-  },
-  {
-    title: 'Calidad y pruebas',
-    description: 'Revisamos comportamiento, rendimiento, seguridad y experiencia en los flujos críticos.',
-  },
-  {
-    title: 'Entrega y operación',
-    description: 'Preparamos despliegue, documentación y acompañamiento para operar la solución con mayor claridad.',
-  },
+  { title: 'Tu idea y objetivo', description: 'Nos cuentas qué necesitas, para quién y qué materiales tienes disponibles.' },
+  { title: 'Propuesta clara', description: 'Acordamos entregables, precio, fechas y revisiones antes de comenzar.' },
+  { title: 'Creación por etapas', description: 'Revisas avances de diseño, contenido o desarrollo para validar el rumbo del proyecto.' },
+  { title: 'Revisión y entrega', description: 'Comprobamos los entregables y compartimos los archivos y las indicaciones acordadas.' },
 ];
 
 const advantages = [
-  {
-    title: 'Desarrollo ágil',
-    description: 'Trabajamos por entregables claros para validar avance y ajustar prioridades durante el proyecto.',
-  },
-  {
-    title: 'Soluciones ajustadas al proceso',
-    description: 'Diseñamos software alrededor de necesidades operativas concretas, no alrededor de plantillas genéricas.',
-  },
-  {
-    title: 'Acompañamiento técnico',
-    description: 'Mantenemos comunicación directa para explicar decisiones, riesgos y alternativas de implementación.',
-  },
-  {
-    title: 'Modelo flexible',
-    description: 'Podemos estructurar el trabajo como desarrollo puntual o acompañamiento continuo según el alcance.',
-  },
-  {
-    title: 'Código documentado',
-    description: 'Entregamos una base técnica comprensible para facilitar mantenimiento y continuidad del proyecto.',
-  },
-  {
-    title: 'Menor dependencia operativa',
-    description: 'Automatizamos tareas y conectamos herramientas para reducir intervención manual innecesaria.',
-  },
+  { title: 'Servicios combinables', description: 'Puedes solicitar una pieza puntual o reunir diseño, multimedia y desarrollo en un mismo proyecto.' },
+  { title: 'Para personas y negocios', description: 'Atendemos a profesionales independientes, creadores, emprendedores y equipos.' },
+  { title: 'Comunicación directa', description: 'Conversamos en español y explicamos las decisiones de cada etapa con claridad.' },
+  { title: 'Alcance por escrito', description: 'Definimos qué incluye la propuesta y cotizamos por separado las ampliaciones.' },
+  { title: 'Experiencia creativa', description: 'Más de 10 años de experiencia en diseño gráfico, PowerPoint y edición de audio.' },
+  { title: 'IA con revisión', description: 'Utilizamos inteligencia artificial como apoyo y revisamos el contenido, el diseño y el funcionamiento.' },
 ];
 
 const portfolioItems = [
@@ -145,9 +85,9 @@ const portfolioItems = [
 ];
 
 const aboutHighlights = [
-  'Equipo compacto y enfocado en resultados.',
+  'Diseño, multimedia y desarrollo en un mismo lugar.',
   'Comunicación directa durante el proyecto.',
-  'Combinación de ingeniería de software y consultoría de procesos.',
+  'Servicios puntuales o combinados según tu necesidad.',
 ];
 
 export default function Home() {
@@ -155,10 +95,10 @@ export default function Home() {
     <>
       <main className={styles.main}>
         <HomeHero
-          eyebrow="Ingeniería de software empresarial"
-          title="Software a la medida para operar, integrar y escalar con claridad técnica"
-          description="En Código Nexo diseñamos plataformas web, aplicaciones, integraciones y automatizaciones para empresas que necesitan convertir procesos complejos en herramientas confiables."
-          primaryCta={{ label: 'Solicitar revisión técnica', href: '#contacto' }}
+          eyebrow="Diseño · Multimedia · Desarrollo web"
+          title="Diseño, páginas web y aplicaciones para dar forma a tus ideas"
+          description="Ayudamos a personas, profesionales y negocios con diseño gráfico, multimedia, presentaciones y desarrollo digital. Contrata un servicio o combínalos en un proyecto con alcance y precio acordados."
+          primaryCta={{ label: 'Cuéntanos tu proyecto', href: '#contacto' }}
           secondaryCta={{ label: 'Explorar servicios', href: '#servicios' }}
           brands={references}
           technologies={technologies}
@@ -179,20 +119,20 @@ export default function Home() {
           <PageContainer>
             <div className={styles.sectionIntro}>
               <p className={styles.eyebrow}>Servicios</p>
-              <h2 className={styles.title}>Soluciones tecnológicas para proyectos que necesitan estructura</h2>
+              <h2 className={styles.title}>Lo que necesitas para comunicar, publicar y crear</h2>
               <p className={styles.description}>
-                Desarrollo web, automatización e integraciones para resolver tareas concretas y acompañar el crecimiento de tu proyecto.
+                Elige un servicio o reúne varios en una propuesta. Cada proyecto se cotiza según sus entregables; el precio del paquete de presentaciones corresponde únicamente a ese servicio.
               </p>
             </div>
             <PageGrid columns={3}>
               {services.map((service) => (
-                <Link key={service.href} href={service.href} className={styles.serviceLink}>
+                <Link key={service.title} href={service.href} className={styles.serviceLink}>
                   <PageIconCard icon={service.icon} title={service.title} text={service.text} />
                 </Link>
               ))}
             </PageGrid>
             <div className={styles.sectionAction}>
-              <Link href="/servicios/" className={styles.secondaryLink}>Ver todos los servicios</Link>
+              <Link href="#contacto" className={styles.secondaryLink}>Solicitar una propuesta</Link>
             </div>
           </PageContainer>
         </PageSection>
@@ -201,9 +141,9 @@ export default function Home() {
           <PageContainer>
             <div className={styles.sectionIntroLeft}>
               <p className={styles.eyebrow}>Metodología</p>
-              <h2 className={styles.title}>Un proceso técnico para reducir incertidumbre</h2>
+              <h2 className={styles.title}>De tu idea a una entrega concreta</h2>
               <p className={styles.description}>
-                El trabajo se organiza por etapas para entender el problema, construir con criterio y preparar la operación de la solución.
+                Trabajamos por etapas para que sepas qué recibirás, cuánto cuesta y cómo avanza tu proyecto.
               </p>
             </div>
             <ProcessCards steps={processSteps} />
@@ -214,9 +154,9 @@ export default function Home() {
           <PageContainer>
             <div className={styles.sectionIntro}>
               <p className={styles.eyebrow}>Ventajas</p>
-              <h2 className={styles.title}>Prácticas que hacen más mantenible el desarrollo</h2>
+              <h2 className={styles.title}>Un proyecto a tu medida, con acuerdos claros</h2>
               <p className={styles.description}>
-                Estas ventajas describen cómo abordamos los proyectos y qué tipo de acompañamiento técnico puede esperar un equipo.
+                La propuesta se adapta a lo que necesitas crear, publicar o mejorar.
               </p>
             </div>
             <PageFeatureGrid features={advantages} />
@@ -240,11 +180,11 @@ export default function Home() {
           <PageContainer>
             <div className={styles.sectionIntroLeft}>
               <p className={styles.eyebrow}>Nosotros</p>
-              <h2 className={styles.title}>Un equipo compacto para proyectos donde importa la claridad técnica</h2>
+              <h2 className={styles.title}>Creatividad y tecnología para tu proyecto</h2>
             </div>
             <AboutCompact
-              title="Código Nexo combina desarrollo de software y consultoría de procesos."
-              body="Trabajamos con foco en resultados, evitando burocracia innecesaria y manteniendo comunicación directa para entender el negocio, las prioridades y las restricciones técnicas de cada proyecto."
+              title="Código Nexo reúne diseño gráfico, multimedia y desarrollo digital."
+              body="Soy Ricardo. Trabajo contigo para convertir tus ideas en piezas visuales, contenido multimedia, páginas web y aplicaciones, con comunicación directa y entregables definidos."
               highlights={aboutHighlights}
             />
           </PageContainer>
@@ -254,9 +194,9 @@ export default function Home() {
           <PageContainer>
             <div className={styles.sectionIntro}>
               <p className={styles.eyebrow}>Contacto</p>
-              <h2 className={styles.title}>Revisemos tu proyecto con criterio técnico</h2>
+              <h2 className={styles.title}>Cuéntanos qué quieres crear</h2>
               <p className={styles.description}>
-                Comparte el contexto inicial y analizaremos la necesidad para identificar el siguiente paso.
+                Dinos qué servicio necesitas, para quién es y cuándo te gustaría tenerlo. Con esa información prepararemos el siguiente paso.
               </p>
             </div>
             <ContactSection
