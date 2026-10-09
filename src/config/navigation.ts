@@ -1,19 +1,14 @@
-import { BookOpen, BriefcaseBusiness, Building2, FileText, Cloud, Code, Cpu, GitBranch, Globe, Layers, List, Network, Rocket, SearchCheck, Shield, Smartphone } from "lucide-react";
+import { BookOpen, BriefcaseBusiness, Building2, FileText, Cpu, GitBranch, Globe, Layers, Rocket, SearchCheck, Shield } from "lucide-react";
 
 export const navigationConfig = {
   mainNav: [
     {
       title: "Servicios",
       items: [
-        { title: "Ayuda digital desde $100", href: "/ayuda-digital", description: "Documentos y exposiciones para estudiar y trabajar.", icon: FileText },
+        { title: "Ayuda digital desde $100", href: "/ayuda-digital", description: "Un pendiente concreto, una solución clara.", icon: FileText },
         { title: "Presentaciones", href: "/presentaciones", description: "Tu contenido organizado y listo para presentar.", icon: FileText },
-        { title: "Desarrollo de software", href: "/servicios/desarrollo-software", description: "Plataformas empresariales a la medida.", icon: Code },
-        { title: "Desarrollo Web", href: "/servicios/desarrollo-web", description: "Aplicaciones web rápidas y escalables.", icon: Globe },
-        { title: "Desarrollo Móvil", href: "/servicios/desarrollo-movil", description: "Apps iOS y Android para operación real.", icon: Smartphone },
-        { title: "Desarrollo a la medida", href: "/servicios/desarrollo-a-la-medida", description: "Software empresarial de alto rendimiento.", icon: Code },
-        { title: "APIs e Integraciones", href: "/servicios/apis-e-integraciones", description: "Conexión segura entre sistemas.", icon: Network },
-        { title: "Arquitectura Cloud", href: "/servicios/arquitectura-cloud", description: "Infraestructura AWS/GCP escalable.", icon: Cloud },
-        { title: "Ver todos los servicios", href: "/servicios", description: "Explora el catálogo completo publicado.", icon: List },
+        { title: "Diseño, CV y hojas de cálculo", href: "/ayuda-digital#diseno-y-archivos", description: "Para comunicarte, buscar trabajo y poner orden.", icon: FileText },
+        { title: "Páginas web y aplicaciones", href: "/ayuda-digital#web-y-apps", description: "Para darte a conocer y organizar tus pendientes.", icon: Globe },
       ]
     },
     {
@@ -37,18 +32,9 @@ export const navigationConfig = {
     }
   ],
   servicesIndex: [
-    { title: "Ayuda para estudiar y trabajar", href: "/ayuda-digital", description: "Corrección, formato y exposiciones desde tu material. Paquetes desde $100 MXN.", icon: "FileText" },
-    { title: "Desarrollo de software", href: "/servicios/desarrollo-software", description: "Plataformas empresariales diseñadas para crecer, integrarse y evolucionar con el negocio.", icon: "Code" },
-    { title: "Desarrollo web", href: "/servicios/desarrollo-web", description: "Aplicaciones web modernas, rápidas y preparadas para alta concurrencia.", icon: "Globe" },
-    { title: "Desarrollo móvil", href: "/servicios/desarrollo-movil", description: "Aplicaciones iOS y Android orientadas a operación, rendimiento y seguridad.", icon: "Smartphone" },
-    { title: "Desarrollo a la medida", href: "/servicios/desarrollo-a-la-medida", description: "Software personalizado para procesos empresariales específicos.", icon: "Code" },
-    { title: "APIs e integraciones", href: "/servicios/apis-e-integraciones", description: "Conexión entre ERPs, sistemas legacy, SaaS y plataformas modernas.", icon: "Network" },
-    { title: "Automatización", href: "/servicios/automatizacion", description: "Flujos operativos automatizados para reducir trabajo manual repetitivo.", icon: "Bot" },
-    { title: "Arquitectura cloud", href: "/servicios/arquitectura-cloud", description: "Infraestructura cloud resiliente, escalable y preparada para despliegues seguros.", icon: "Cloud" },
-    { title: "DevOps", href: "/servicios/devops", description: "Pipelines, infraestructura como código y observabilidad para equipos de ingeniería.", icon: "Wrench" },
-    { title: "Inteligencia artificial", href: "/servicios/inteligencia-artificial", description: "Integración de IA generativa y agentes autónomos en procesos corporativos.", icon: "Zap" },
-    { title: "Modernización legacy", href: "/servicios/modernizacion-legacy", description: "Actualización gradual de sistemas obsoletos sin detener la operación.", icon: "Database" },
-    { title: "Consultoría tecnológica", href: "/servicios/consultoria-tecnologica", description: "Auditoría técnica, diseño de arquitectura y acompañamiento estratégico.", icon: "Layers" },
+    { title: "Documentos y exposiciones", href: "/ayuda-digital", description: "Corrección, formato y presentaciones desde tu material. Paquetes desde $100 MXN.", icon: "FileText" },
+    { title: "Diseño, CV y hojas de cálculo", href: "/ayuda-digital#diseno-y-archivos", description: "Comunica tus servicios y ordena tus archivos con ayuda concreta.", icon: "Palette" },
+    { title: "Páginas web y aplicaciones", href: "/ayuda-digital#web-y-apps", description: "Una página para que te conozcan y herramientas para organizar tu trabajo. Consulta precios y alcance.", icon: "Globe" },
   ],
   futureNav: {
     soluciones: [
@@ -70,13 +56,9 @@ export const navigationConfig = {
   },
   footerNav: {
     servicios: [
-      { title: "Ayuda digital", href: "/ayuda-digital" },
-      { title: "Todos los servicios", href: "/servicios" },
-      { title: "Desarrollo de software", href: "/servicios/desarrollo-software" },
-      { title: "Arquitectura Cloud", href: "/servicios/arquitectura-cloud" },
-      { title: "Modernización Legacy", href: "/servicios/modernizacion-legacy" },
-      { title: "Inteligencia Artificial", href: "/servicios/inteligencia-artificial" },
-      { title: "Desarrollo Web", href: "/servicios/desarrollo-web" },
+      { title: "Ayuda digital y precios", href: "/ayuda-digital" },
+      { title: "Diseño, CV y archivos", href: "/ayuda-digital#diseno-y-archivos" },
+      { title: "Páginas web y aplicaciones", href: "/ayuda-digital#web-y-apps" },
     ],
     empresa: [
       { title: "Nosotros", href: "/nosotros" },
