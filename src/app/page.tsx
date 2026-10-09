@@ -47,7 +47,7 @@ const references = ['Su Voz a Diario', 'Club Colombia FC', 'Joga Bonito', 'Esdra
 const technologies = ['Next.js', 'React', 'Node.js', 'Firebase', 'AWS', 'Python'];
 
 const services = [
-  { title: 'Ayuda para estudiar y trabajar', text: 'Corrección, formato de documentos, exposiciones y ayuda con archivos. Paquetes pequeños desde $200 MXN.', href: '/ayuda-digital', icon: 'FileText' },
+  { title: 'Ayuda para estudiar y trabajar', text: 'Corrección, formato de documentos, exposiciones y ayuda con archivos. Paquetes pequeños desde $100 MXN.', href: '/ayuda-digital', icon: 'FileText' },
   { title: 'Diseño gráfico', text: 'Piezas para redes sociales, material promocional y diseño visual para comunicar tus servicios.', href: '#contacto', icon: 'Palette' },
   { title: 'Documentos y redacción', text: 'Redacción, corrección y organización de documentos a partir de tus ideas y materiales, con revisión del contenido.', href: '#contacto', icon: 'FileText' },
   { title: 'Páginas web', text: 'Páginas de servicios, portafolios y sitios adaptados a celulares para que puedan conocerte y contactarte.', href: '/servicios/desarrollo-web', icon: 'Globe' },
@@ -100,7 +100,7 @@ export default function Home() {
           title="¿Se te complica o no tienes tiempo? Te ayudamos a dejarlo listo."
           description="Corregimos y damos formato a tus documentos, organizamos tus presentaciones y te ayudamos con archivos de trabajo. También creamos diseño gráfico, páginas web y aplicaciones. Cuéntanos qué necesitas resolver."
           primaryCta={{ label: 'Necesito ayuda con un pendiente', href: '#contacto' }}
-          secondaryCta={{ label: 'Ver opciones desde $200 MXN', href: '/ayuda-digital' }}
+          secondaryCta={{ label: 'Ver opciones desde $100 MXN', href: '/ayuda-digital' }}
           brands={references}
           technologies={technologies}
         />
@@ -110,7 +110,7 @@ export default function Home() {
             <div className={styles.sectionIntro}>
               <p className={styles.eyebrow}>Ayuda para estudiar y trabajar</p>
               <h2 className={styles.title}>Tu pendiente puede empezar a resolverse hoy</h2>
-              <p className={styles.description}>Un texto por corregir, un documento que se desacomoda o una exposición por preparar. Tenemos paquetes pequeños desde $200 MXN y revisamos tu material antes de confirmar precio y entrega.</p>
+              <p className={styles.description}>Un texto por corregir, un documento que se desacomoda o una exposición por preparar. Tenemos paquetes pequeños desde $100 MXN y revisamos tu material antes de confirmar precio y entrega.</p>
               <div className={styles.sectionAction}><Link href="/ayuda-digital" className={styles.secondaryLink}>Ver paquetes, precios y qué incluyen →</Link></div>
             </div>
           </PageContainer>
