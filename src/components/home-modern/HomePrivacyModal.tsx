@@ -101,7 +101,7 @@ export default function HomePrivacyModal({ isOpen, onClose, restoreFocusRef }: H
         <div className={styles.body}>
           <h2 id="privacy-modal-title">Aviso de Privacidad</h2>
           <p>En CódigoNexo, valoramos y respetamos tu privacidad. Los datos personales recabados a través de nuestro formulario de contacto serán utilizados exclusivamente para dar seguimiento a tu solicitud, brindarte asesoría y enviarte información relacionada con nuestros servicios.</p>
-          <p>Tus datos no serán compartidos, vendidos ni alquilados a terceros bajo ninguna circunstancia, y se almacenarán de forma segura aplicando medidas técnicas y administrativas para evitar su vulneración.</p>
+          <p>El formulario utiliza FormSubmit para transmitir tu consulta al correo de Código Nexo. Estos proveedores procesan la información necesaria para prestar sus servicios. No vendemos ni alquilamos tus datos. Evita enviar contraseñas, documentos de identidad o datos confidenciales por este formulario.</p>
           <p>De conformidad con la legislación aplicable, tienes derecho a ejercer tus derechos ARCO (Acceso, Rectificación, Cancelación y Oposición) sobre tus datos personales. Para cualquier solicitud relacionada con el manejo de tu información, puedes contactarnos directamente en <strong>codigonexo.rgz@gmail.com</strong>.</p>
           <p>Al enviar tus datos, confirmas que has leído y aceptas los términos de este Aviso de Privacidad.</p>
         </div>
