@@ -11,7 +11,7 @@ export default function FatFooter() {
         <div className={styles.brand}>
           <div className={styles.logo}>CódigoNexo.</div>
           <p className={styles.tagline}>
-            Diseño gráfico, multimedia, páginas web y aplicaciones para personas, profesionales y negocios.
+            Diseño gráfico, documentos, páginas web y aplicaciones para personas, profesionales y negocios.
           </p>
         </div>
         
