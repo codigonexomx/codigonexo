@@ -3,8 +3,8 @@ import Link from 'next/link';
 import styles from '../presentaciones/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Ayuda con documentos, exposiciones y archivos | Código Nexo',
-  description: 'Corrección desde $100 MXN, formato de documentos y exposiciones a partir de tu material. Para estudiantes, personas y trabajadores. Precio y alcance antes de empezar.',
+  title: 'Documentos, diseño, páginas web y apps sencillas | Código Nexo',
+  description: 'Resuelve tus pendientes: documentos desde $100 MXN, web de presentación por $1,200 y app personal de organización por $1,800. Consulta alcances y entregas.',
   alternates: { canonical: '/ayuda-digital' },
 };
 
@@ -13,15 +13,25 @@ const packages = [
   { name: 'Dale formato a mi documento', price: '$150 MXN', scope: 'Hasta 3 páginas y 900 palabras, con un máximo de 1 tabla o imagen proporcionada.', result: 'Títulos, márgenes, tipografía y numeración consistentes. Word editable y PDF. Partimos de tu texto terminado.', time: '2 días hábiles' },
   { name: 'Prepara mi exposición', price: '$250 MXN', scope: 'Hasta 6 diapositivas y 800 palabras de contenido proporcionado.', result: 'Orden del contenido, diseño legible y corrección ortográfica. PowerPoint editable y PDF para que presentes tus ideas.', time: '3 días hábiles' },
 ];
+const creativePackages = [
+  { name: 'Ordena mi CV', price: '$200 MXN', scope: 'CV existente de hasta 2 páginas y 900 palabras.', result: 'Corrección, orden y formato legible. Word y PDF. Trabajamos con tu experiencia real y tus datos; la entrega no garantiza una contratación.', time: '2 días hábiles' },
+  { name: 'Dale imagen a mi publicación', price: '$150 MXN por pieza', scope: 'Una imagen estática, un formato, con tu texto final, logotipo y fotografías autorizadas. También 4 piezas por $500 o 8 por $900 MXN.', result: 'Diseños consistentes para explicar tu servicio o anunciar una actividad. Entrega PNG o JPG; no incluye publicar, administrar redes ni campañas.', time: '2 días hábiles por pieza; 3 días para 4 y 5 días para 8' },
+  { name: 'Ordena mi hoja de cálculo', price: '$250 MXN', scope: 'Una hoja de hasta 200 filas y 10 columnas, con hasta 3 fórmulas sencillas.', result: 'Orden, filtros, formato y fórmulas de sumas, porcentajes o totales. Archivo Excel revisado con una muestra. Macros, integraciones y recuperación de datos se cotizan aparte.', time: '2 días hábiles' },
+];
+const webPackages = [
+  { name: 'Mi página para darme a conocer', price: '$1,200 MXN', scope: 'Una página de hasta 5 secciones, en español, adaptada a celular, con tu texto, logo y hasta 8 imágenes autorizadas.', result: 'Presentación de tus servicios, botones a WhatsApp, correo y redes. Archivos del sitio y una publicación en alojamiento compatible que acordemos contigo. Dominio y alojamiento se pagan aparte; confirmamos esos costos antes de contratar. Sin tienda, pagos ni panel de administración.', time: '5 días hábiles' },
+  { name: 'Mi organizador personal', price: '$1,800 MXN', scope: 'Aplicación sencilla en el navegador para un proceso: tareas, seguimiento de pedidos o cotizaciones. Hasta 3 pantallas y 8 campos por registro.', result: 'Agregar, editar, buscar y marcar estados; respaldo mediante exportación e importación de archivo. Uso individual en un navegador, con datos guardados en ese dispositivo: debes descargar tus respaldos. Incluye código e instrucciones. Sin cuentas, nube compartida, cobros ni publicación en tiendas de apps.', time: '7 días hábiles' },
+  { name: 'Una aplicación para mi equipo', price: 'Cotización según funciones', scope: 'Cuando varias personas necesitan compartir clientes, pedidos, inventario o pendientes.', result: 'Primero acordamos el problema y una primera versión concreta. Accesos, almacenamiento compartido, respaldos y costos de operación se detallan en la propuesta. Te mostramos avances y comprobamos los casos de uso antes de entregar.', time: 'Fecha acordada después de revisar el alcance' },
+];
 const contact = (service: string) => 'https://wa.me/525529058845?text=' + encodeURIComponent(`Hola, necesito ayuda con: ${service}. Tengo este material: ___. Lo necesito para: ___. ¿Podemos revisar el alcance?`);
 
 export default function AyudaDigitalPage() {
   return <main className={styles.page}>
     <section className={styles.hero}>
       <div>
-        <p className={styles.eyebrow}>PERSONAS · ESTUDIANTES · INDEPENDIENTES</p>
+        <p className={styles.eyebrow}>PERSONAS · ESTUDIANTES · NEGOCIOS</p>
         <h1>¿Se te complica?<br /><em>Te ayudamos a dejarlo listo.</em></h1>
-        <p className={styles.intro}>Ese documento que se desacomoda, el texto que necesita una revisión o la exposición que todavía no tiene forma. Trabajamos con tu material y te entregamos archivos listos para usar.</p>
+        <p className={styles.intro}>Se acerca la entrega, tu documento no queda como quieres o llevas los pendientes entre notas y mensajes. Cuéntame qué está pasando: soy Ricardo y te ayudo a encontrar una solución práctica, desde arreglar un archivo hasta crear tu página o una aplicación sencilla.</p>
         <p className={styles.use}>Puedes delegar un pendiente concreto, aunque sea pequeño. Confirmamos qué haremos, cuánto cuesta y cuándo lo recibirás.</p>
         <a className={styles.primary} href={contact('un pendiente digital')} target="_blank" rel="noopener noreferrer">Cuéntanos qué necesitas resolver ↗</a>
         <a className={styles.emailTop} href="mailto:codigonexo.rgz@gmail.com?subject=Ayuda%20con%20un%20pendiente">Prefiero escribir por correo</a>
@@ -44,13 +54,23 @@ export default function AyudaDigitalPage() {
       </article>)}</div>
       <p>Los paquetes parten de contenido que tú proporcionas. Investigación, traducción, referencias bibliográficas, ecuaciones, diagramas nuevos y requisitos editoriales especiales requieren revisión y cotización independiente. Confirmamos cualquier cambio de alcance antes de trabajar.</p>
     </section>
-    <section>
-      <h2>También resolvemos otros pendientes</h2>
-      <div className={styles.audiences}>
-        <article><h3>Archivos y hojas de cálculo</h3><p>¿Necesitas ordenar una lista, revisar una fórmula o simplificar un reporte? Envíanos una muestra sin datos confidenciales. Revisamos la dificultad y te damos una cotización.</p></article>
-        <article><h3>Estructura y revisión</h3><p>Te ayudamos a ordenar las secciones de tu documento y señalar lo que necesita aclararse. Si tienes instrucciones de entrega, las revisamos contigo para definir el trabajo.</p></article>
-        <article><h3>Diseño, web y aplicaciones</h3><p>Seguimos creando piezas gráficas, páginas web y herramientas a la medida. Podemos combinar servicios cuando tu proyecto lo necesite.</p><Link href="/#servicios">Explorar otros servicios →</Link></article>
-      </div>
+    <section id="diseno-y-archivos">
+      <h2>Para buscar trabajo, comunicarte y poner orden</h2>
+      <div className={styles.audiences}>{creativePackages.map(item => <article key={item.name}>
+        <h3>{item.name}</h3><p><strong>{item.price}</strong></p><p>{item.scope}</p><p>{item.result}</p><p>Entrega: {item.time}, desde material completo y confirmación.</p>
+        <a href={contact(item.name)} target="_blank" rel="noopener noreferrer">Cuéntame qué necesitas ↗</a>
+      </article>)}</div>
+      <p>Precios totales en MXN. Una ronda de ajustes sobre el contenido acordado, en una sola lista dentro de los 7 días siguientes a la entrega.</p>
+    </section>
+    <section id="web-y-apps">
+      <p className={styles.eyebrow}>TU IDEA, EN UNA SOLUCIÓN CONCRETA</p>
+      <h2>Una página para que te conozcan. Una aplicación para organizarte.</h2>
+      <p>No necesitas saber de programación. Dime qué repites todos los días, qué se te pierde o qué quieres mostrar. Revisamos juntos qué conviene construir y cuánto costará mantenerlo.</p>
+      <div className={styles.audiences}>{webPackages.map(item => <article key={item.name}>
+        <h3>{item.name}</h3><p><strong>{item.price}</strong></p><p>{item.scope}</p><p>{item.result}</p><p>Entrega: {item.time}. Los paquetes empiezan al recibir los materiales y confirmar el proyecto.</p>
+        <a href={contact(item.name)} target="_blank" rel="noopener noreferrer">Revisemos mi idea ↗</a>
+      </article>)}</div>
+      <p>Los paquetes de $1,200 y $1,800 MXN son precios totales para el alcance descrito. Incluyen una ronda de ajustes y corrección de fallos del alcance acordado reportados dentro de 15 días de la entrega. Nuevas funciones y mantenimiento continuo se cotizan antes de trabajar.</p>
     </section>
     <section className={styles.faq}>
       <h2>Antes de empezar</h2>
