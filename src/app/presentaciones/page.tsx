@@ -5,7 +5,8 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: 'Presentaciones profesionales desde tu contenido | Código Nexo',
   description: 'Ordenamos tus ideas y diseñamos tu presentación. Hasta 12 diapositivas, PowerPoint editable y PDF, con una ronda de ajustes. Paquete inicial de $1,500 MXN.',
-  alternates: { canonical: '/presentaciones/' },
+  openGraph: { title: 'Tu presentación, lista para mostrar | Código Nexo', description: 'Hasta 12 diapositivas, PowerPoint editable y PDF. Paquete de $1,500 MXN.', url: 'https://codigonexo.mx/presentaciones', images: [{ url: '/muestras/presentaciones/slide-1.png', width: 1280, height: 720, alt: 'Ejemplo ficticio de presentación de capacitación' }] },
+  alternates: { canonical: '/presentaciones' },
 };
 const whatsapp = 'https://wa.me/525529058845?text=' + encodeURIComponent('Hola, vi el paquete de presentaciones de Código Nexo. Necesito una presentación para: ___. Tengo este material: ___. Mi fecha objetivo es: ___. ¿Podemos revisar el alcance?');
 const steps = [
@@ -22,6 +23,8 @@ export default function PresentacionesPage() {
         <p className={styles.intro}>Tú conoces tu trabajo. Nosotros organizamos tus ideas y las convertimos en una presentación clara, cuidada y editable.</p>
         <p className={styles.use}>Para ofrecer tus servicios, presentar un proyecto o impartir una capacitación.</p>
         <a className={styles.primary} href={whatsapp} target="_blank" rel="noopener noreferrer">Quiero preparar mi presentación ↗</a>
+        <a className={styles.emailTop} href="mailto:codigonexo.rgz@gmail.com?subject=Mi%20presentaci%C3%B3n&body=Objetivo%3A%20%0AAudiencia%3A%20%0AFecha%20deseada%3A%20%0AMaterial%20disponible%3A%20">Prefiero consultar por correo</a>
+        <p className={styles.trustLine}>Atención directa con Ricardo · México · Servicio en español</p>
         <a className={styles.secondary} href="#muestra">Ver una muestra ↓</a>
       </div>
       <aside className={styles.offer} aria-label="Paquete inicial">
@@ -30,6 +33,15 @@ export default function PresentacionesPage() {
         <ul><li>Hasta 12 diapositivas</li><li>Organización y mejora de redacción</li><li>Diseño a partir de tu contenido</li><li>PowerPoint editable y PDF</li><li>Una ronda de ajustes</li></ul>
         <p className={styles.note}>Revisamos tus archivos antes de confirmar el proyecto. Trabajo adicional se cotiza por separado.</p>
       </aside>
+    </section>
+    <section aria-labelledby="para-quien">
+      <p className={styles.eyebrow}>TAMBIÉN PARA TU PROYECTO PERSONAL</p>
+      <h2 id="para-quien">No necesitas tener una empresa</h2>
+      <div className={styles.audiences}>
+        <article><h3>Ofrece tus servicios</h3><p>Convierte tus notas en una propuesta clara para tus próximos clientes, como profesional independiente o emprendedor.</p></article>
+        <article><h3>Prepara tu taller</h3><p>Organiza tu material para una clase, una capacitación o una charla que tú vas a impartir.</p></article>
+        <article><h3>Explica tu proyecto</h3><p>Presenta una idea propia, un portafolio o los avances de tu trabajo con una estructura fácil de seguir.</p></article>
+      </div>
     </section>
     <section className={styles.sample} id="muestra">
       <p className={styles.eyebrow}>UNA IDEA, MEJOR PRESENTADA</p>
