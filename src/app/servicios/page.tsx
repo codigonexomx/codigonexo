@@ -12,8 +12,8 @@ import { navigationConfig } from '@/config/navigation';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Servicios de Ingeniería de Software | CódigoNexo',
-  description: 'Índice de servicios publicados de CódigoNexo: desarrollo de software, web, móvil, integraciones, automatización, cloud, DevOps, IA y consultoría.',
+  title: 'Servicios digitales para tus pendientes | CódigoNexo',
+  description: 'Documentos, presentaciones, diseño, páginas web y herramientas sencillas con alcance y precio claros.',
   alternates: {
     canonical: 'https://codigonexo.mx/servicios',
   },
@@ -25,8 +25,8 @@ export default function ServiciosPage() {
       <Breadcrumbs />
 
       <PageHero
-        title="Servicios de Ingeniería de Software"
-        subtitle="Soluciones publicadas para diseñar, construir, integrar, modernizar y operar software empresarial."
+        title="Servicios digitales para tus pendientes"
+        subtitle="Ayuda con tus archivos, tu presentación y tu presencia en internet. Para personas, estudiantes y negocios."
       />
 
       <PageSection>
@@ -48,10 +48,10 @@ export default function ServiciosPage() {
       <PageSection theme="darker">
         <PageContainer width="narrow">
           <PageCTA
-            title="¿Necesitas priorizar una iniciativa?"
-            subtitle="Revisemos el contexto del proyecto y definamos qué servicio corresponde a la necesidad actual."
-            ctaLabel="Solicitar orientación técnica"
-            microcopy="Analizaremos tu caso y coordinaremos una conversación para identificar la ruta más adecuada."
+            title="¿Qué necesitas dejar listo?"
+            subtitle="Comparte tu material, el resultado que necesitas y la fecha. Confirmaremos el alcance antes de empezar."
+            ctaLabel="Consultar mi caso"
+            microcopy="Precio, entregables y fecha acordados por escrito."
           />
         </PageContainer>
       </PageSection>
