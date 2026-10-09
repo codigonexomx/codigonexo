@@ -4,14 +4,14 @@ import styles from '../presentaciones/page.module.css';
 
 export const metadata: Metadata = {
   title: 'Ayuda con documentos, exposiciones y archivos | Código Nexo',
-  description: 'Corrección desde $200 MXN, formato de documentos y exposiciones a partir de tu material. Para estudiantes, personas y trabajadores. Precio y alcance antes de empezar.',
+  description: 'Corrección desde $100 MXN, formato de documentos y exposiciones a partir de tu material. Para estudiantes, personas y trabajadores. Precio y alcance antes de empezar.',
   alternates: { canonical: '/ayuda-digital' },
 };
 
 const packages = [
-  { name: 'Corrige mi texto', price: '$200 MXN', scope: 'Hasta 1,000 palabras en español, en un archivo editable.', result: 'Ortografía, puntuación y ajustes de claridad sin cambiar tus ideas. Entrega con cambios señalados y versión limpia.', time: '2 días hábiles' },
-  { name: 'Dale formato a mi documento', price: '$300 MXN', scope: 'Hasta 5 páginas y 1,500 palabras, con un máximo de 2 tablas o imágenes proporcionadas.', result: 'Títulos, márgenes, tipografía y numeración consistentes. Word editable y PDF. Partimos de tu texto terminado.', time: '2 días hábiles' },
-  { name: 'Prepara mi exposición', price: '$450 MXN', scope: 'Hasta 6 diapositivas y 800 palabras de contenido proporcionado.', result: 'Orden del contenido, diseño legible y corrección ortográfica. PowerPoint editable y PDF para que presentes tus ideas.', time: '3 días hábiles' },
+  { name: 'Corrige mi texto', price: '$100 MXN', scope: 'Hasta 500 palabras en español, en un archivo editable.', result: 'Ortografía, puntuación y ajustes de claridad sin cambiar tus ideas. Entrega con cambios señalados y versión limpia.', time: '2 días hábiles' },
+  { name: 'Dale formato a mi documento', price: '$150 MXN', scope: 'Hasta 3 páginas y 900 palabras, con un máximo de 1 tabla o imagen proporcionada.', result: 'Títulos, márgenes, tipografía y numeración consistentes. Word editable y PDF. Partimos de tu texto terminado.', time: '2 días hábiles' },
+  { name: 'Prepara mi exposición', price: '$250 MXN', scope: 'Hasta 6 diapositivas y 800 palabras de contenido proporcionado.', result: 'Orden del contenido, diseño legible y corrección ortográfica. PowerPoint editable y PDF para que presentes tus ideas.', time: '3 días hábiles' },
 ];
 const contact = (service: string) => 'https://wa.me/525529058845?text=' + encodeURIComponent(`Hola, necesito ayuda con: ${service}. Tengo este material: ___. Lo necesito para: ___. ¿Podemos revisar el alcance?`);
 
