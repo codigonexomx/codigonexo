@@ -76,7 +76,7 @@ export default function HomeContactForm({ onOpenPrivacy, privacyTriggerRef }: Ho
           autoComplete="email"
           required
           disabled={isLoading}
-          placeholder="tu@empresa.com"
+          placeholder="tu@correo.com"
         />
       </div>
       <div className={styles.field}>
@@ -97,7 +97,7 @@ export default function HomeContactForm({ onOpenPrivacy, privacyTriggerRef }: Ho
           name="message"
           required
           disabled={isLoading}
-          placeholder="Cuéntanos sobre el proyecto o necesidad técnica"
+          placeholder="¿Qué necesitas resolver? Cuéntanos qué material tienes y para cuándo lo necesitas."
         />
       </div>
       <button type="submit" className={styles.submit} disabled={isLoading}>
