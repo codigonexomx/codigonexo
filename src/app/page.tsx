@@ -14,14 +14,14 @@ import FloatingActions from '@/components/home-modern/FloatingActions';
 import styles from './home.module.css';
 
 export const metadata: Metadata = {
-  title: 'Código Nexo | Diseño, multimedia, páginas web y aplicaciones',
-  description: 'Diseño gráfico, multimedia, presentaciones, páginas web y aplicaciones para personas, profesionales y negocios. Servicios individuales o combinados en un mismo proyecto.',
+  title: 'Código Nexo | Diseño, documentos, páginas web y aplicaciones',
+  description: 'Diseño gráfico, documentos, presentaciones, páginas web y aplicaciones para personas, profesionales y negocios. Servicios individuales o combinados en un mismo proyecto.',
   alternates: {
     canonical: 'https://codigonexo.mx/',
   },
   openGraph: {
-    title: 'Código Nexo | Diseño, multimedia, páginas web y aplicaciones',
-    description: 'Diseño, multimedia, páginas web y aplicaciones para dar forma a tu proyecto digital.',
+    title: 'Código Nexo | Diseño, documentos, páginas web y aplicaciones',
+    description: 'Diseño, documentos, páginas web y aplicaciones para dar forma a tu proyecto digital.',
     url: 'https://codigonexo.mx/',
     siteName: 'Código Nexo',
     type: 'website',
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Código Nexo | Diseño, multimedia, páginas web y aplicaciones',
-    description: 'Diseño, multimedia, páginas web y aplicaciones para dar forma a tu proyecto digital.',
+    title: 'Código Nexo | Diseño, documentos, páginas web y aplicaciones',
+    description: 'Diseño, documentos, páginas web y aplicaciones para dar forma a tu proyecto digital.',
     images: ['https://codigonexo.mx/assets/images/og-image.jpg'],
   },
 };
@@ -48,7 +48,7 @@ const technologies = ['Next.js', 'React', 'Node.js', 'Firebase', 'AWS', 'Python'
 
 const services = [
   { title: 'Diseño gráfico', text: 'Piezas para redes sociales, material promocional y diseño visual para comunicar tus servicios.', href: '#contacto', icon: 'Palette' },
-  { title: 'Multimedia y audio', text: 'Edición de audio y contenido multimedia para cursos, presentaciones y proyectos digitales.', href: '#contacto', icon: 'AudioLines' },
+  { title: 'Documentos y redacción', text: 'Redacción, corrección y organización de documentos a partir de tus ideas y materiales, con revisión del contenido.', href: '#contacto', icon: 'FileText' },
   { title: 'Páginas web', text: 'Páginas de servicios, portafolios y sitios adaptados a celulares para que puedan conocerte y contactarte.', href: '/servicios/desarrollo-web', icon: 'Globe' },
   { title: 'Aplicaciones y software', text: 'Herramientas a la medida para organizar información y resolver tareas. Definimos una primera versión con alcance concreto.', href: '/servicios/desarrollo-software', icon: 'Code' },
   { title: 'Presentaciones editables', text: 'Organización de contenido y diseño en PowerPoint. Consulta el paquete de hasta 12 diapositivas y su muestra.', href: '/presentaciones', icon: 'Presentation' },
@@ -63,11 +63,11 @@ const processSteps = [
 ];
 
 const advantages = [
-  { title: 'Servicios combinables', description: 'Puedes solicitar una pieza puntual o reunir diseño, multimedia y desarrollo en un mismo proyecto.' },
+  { title: 'Servicios combinables', description: 'Puedes solicitar una pieza puntual o reunir diseño, documentos y desarrollo en un mismo proyecto.' },
   { title: 'Para personas y negocios', description: 'Atendemos a profesionales independientes, creadores, emprendedores y equipos.' },
   { title: 'Comunicación directa', description: 'Conversamos en español y explicamos las decisiones de cada etapa con claridad.' },
   { title: 'Alcance por escrito', description: 'Definimos qué incluye la propuesta y cotizamos por separado las ampliaciones.' },
-  { title: 'Experiencia creativa', description: 'Más de 10 años de experiencia en diseño gráfico, PowerPoint y edición de audio.' },
+  { title: 'Experiencia creativa', description: 'Más de 10 años de experiencia en diseño gráfico y PowerPoint.' },
   { title: 'IA con revisión', description: 'Utilizamos inteligencia artificial como apoyo y revisamos el contenido, el diseño y el funcionamiento.' },
 ];
 
@@ -85,7 +85,7 @@ const portfolioItems = [
 ];
 
 const aboutHighlights = [
-  'Diseño, multimedia y desarrollo en un mismo lugar.',
+  'Diseño, documentos y desarrollo en un mismo lugar.',
   'Comunicación directa durante el proyecto.',
   'Servicios puntuales o combinados según tu necesidad.',
 ];
@@ -95,9 +95,9 @@ export default function Home() {
     <>
       <main className={styles.main}>
         <HomeHero
-          eyebrow="Diseño · Multimedia · Desarrollo web"
+          eyebrow="Diseño · Documentos · Desarrollo web"
           title="Diseño, páginas web y aplicaciones para dar forma a tus ideas"
-          description="Ayudamos a personas, profesionales y negocios con diseño gráfico, multimedia, presentaciones y desarrollo digital. Contrata un servicio o combínalos en un proyecto con alcance y precio acordados."
+          description="Ayudamos a personas, profesionales y negocios con diseño gráfico, documentos, presentaciones y desarrollo digital. Contrata un servicio o combínalos en un proyecto con alcance y precio acordados."
           primaryCta={{ label: 'Cuéntanos tu proyecto', href: '#contacto' }}
           secondaryCta={{ label: 'Explorar servicios', href: '#servicios' }}
           brands={references}
@@ -183,8 +183,8 @@ export default function Home() {
               <h2 className={styles.title}>Creatividad y tecnología para tu proyecto</h2>
             </div>
             <AboutCompact
-              title="Código Nexo reúne diseño gráfico, multimedia y desarrollo digital."
-              body="Soy Ricardo. Trabajo contigo para convertir tus ideas en piezas visuales, contenido multimedia, páginas web y aplicaciones, con comunicación directa y entregables definidos."
+              title="Código Nexo reúne diseño gráfico, documentos y desarrollo digital."
+              body="Soy Ricardo. Trabajo contigo para convertir tus ideas en piezas visuales, documentos, páginas web y aplicaciones, con comunicación directa y entregables definidos."
               highlights={aboutHighlights}
             />
           </PageContainer>
