@@ -1,10 +1,12 @@
-import { BookOpen, BriefcaseBusiness, Building2, Cloud, Code, Cpu, GitBranch, Globe, Layers, List, Network, Rocket, SearchCheck, Shield, Smartphone } from "lucide-react";
+import { BookOpen, BriefcaseBusiness, Building2, FileText, Cloud, Code, Cpu, GitBranch, Globe, Layers, List, Network, Rocket, SearchCheck, Shield, Smartphone } from "lucide-react";
 
 export const navigationConfig = {
   mainNav: [
     {
       title: "Servicios",
       items: [
+        { title: "Ayuda digital desde $200", href: "/ayuda-digital", description: "Documentos y exposiciones para estudiar y trabajar.", icon: FileText },
+        { title: "Presentaciones", href: "/presentaciones", description: "Tu contenido organizado y listo para presentar.", icon: FileText },
         { title: "Desarrollo de software", href: "/servicios/desarrollo-software", description: "Plataformas empresariales a la medida.", icon: Code },
         { title: "Desarrollo Web", href: "/servicios/desarrollo-web", description: "Aplicaciones web rápidas y escalables.", icon: Globe },
         { title: "Desarrollo Móvil", href: "/servicios/desarrollo-movil", description: "Apps iOS y Android para operación real.", icon: Smartphone },
@@ -35,6 +37,7 @@ export const navigationConfig = {
     }
   ],
   servicesIndex: [
+    { title: "Ayuda para estudiar y trabajar", href: "/ayuda-digital", description: "Corrección, formato y exposiciones desde tu material. Paquetes desde $200 MXN.", icon: "FileText" },
     { title: "Desarrollo de software", href: "/servicios/desarrollo-software", description: "Plataformas empresariales diseñadas para crecer, integrarse y evolucionar con el negocio.", icon: "Code" },
     { title: "Desarrollo web", href: "/servicios/desarrollo-web", description: "Aplicaciones web modernas, rápidas y preparadas para alta concurrencia.", icon: "Globe" },
     { title: "Desarrollo móvil", href: "/servicios/desarrollo-movil", description: "Aplicaciones iOS y Android orientadas a operación, rendimiento y seguridad.", icon: "Smartphone" },
@@ -67,6 +70,7 @@ export const navigationConfig = {
   },
   footerNav: {
     servicios: [
+      { title: "Ayuda digital", href: "/ayuda-digital" },
       { title: "Todos los servicios", href: "/servicios" },
       { title: "Desarrollo de software", href: "/servicios/desarrollo-software" },
       { title: "Arquitectura Cloud", href: "/servicios/arquitectura-cloud" },
