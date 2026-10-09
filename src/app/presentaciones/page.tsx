@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: 'Presentaciones profesionales desde tu contenido | Código Nexo',
-  description: 'Ordenamos tus ideas y diseñamos tu presentación. Hasta 12 diapositivas, PowerPoint editable y PDF, con una ronda de ajustes. Paquete inicial de $1,500 MXN.',
-  openGraph: { title: 'Tu presentación, lista para mostrar | Código Nexo', description: 'Hasta 12 diapositivas, PowerPoint editable y PDF. Paquete de $1,500 MXN.', url: 'https://codigonexo.mx/presentaciones', images: [{ url: '/muestras/presentaciones/slide-1.png', width: 1280, height: 720, alt: 'Ejemplo ficticio de presentación de capacitación' }] },
+  description: 'Ordenamos tus ideas y diseñamos tu presentación. Hasta 12 diapositivas, PowerPoint editable y PDF, con una ronda de ajustes. Paquete inicial de $450 MXN.',
+  openGraph: { title: 'Tu presentación, lista para mostrar | Código Nexo', description: 'Hasta 12 diapositivas, PowerPoint editable y PDF. Paquete de $450 MXN.', url: 'https://codigonexo.mx/presentaciones', images: [{ url: '/muestras/presentaciones/slide-1.png', width: 1280, height: 720, alt: 'Ejemplo ficticio de presentación de capacitación' }] },
   alternates: { canonical: '/presentaciones' },
 };
 const whatsapp = 'https://wa.me/525529058845?text=' + encodeURIComponent('Hola, vi el paquete de presentaciones de Código Nexo. Necesito una presentación para: ___. Tengo este material: ___. Mi fecha objetivo es: ___. ¿Podemos revisar el alcance?');
@@ -18,7 +19,7 @@ export default function PresentacionesPage() {
   return <main className={styles.page}>
     <section className={styles.hero}>
       <div>
-        <p className={styles.eyebrow}>PARA PROFESIONALES INDEPENDIENTES</p>
+        <p className={styles.eyebrow}>PARA ESTUDIANTES, PERSONAS E INDEPENDIENTES</p>
         <h1>Tu próxima presentación,<br /><em>lista para mostrar.</em></h1>
         <p className={styles.intro}>Tú conoces tu trabajo. Nosotros organizamos tus ideas y las convertimos en una presentación clara, cuidada y editable.</p>
         <p className={styles.use}>Para ofrecer tus servicios, presentar un proyecto o impartir una capacitación.</p>
@@ -28,9 +29,10 @@ export default function PresentacionesPage() {
         <a className={styles.secondary} href="#muestra">Ver una muestra ↓</a>
       </div>
       <aside className={styles.offer} aria-label="Paquete inicial">
-        <p>PAQUETE INICIAL</p><strong>$1,500 <span>MXN</span></strong>
+        <p>PAQUETE DE 12 DIAPOSITIVAS</p><strong>$450 <span>MXN</span></strong>
         <p>Precio total del paquete descrito.</p>
-        <ul><li>Hasta 12 diapositivas</li><li>Organización y mejora de redacción</li><li>Diseño a partir de tu contenido</li><li>PowerPoint editable y PDF</li><li>Una ronda de ajustes</li></ul>
+        <ul><li>Hasta 12 diapositivas</li><li>Organización y mejora de redacción</li><li>Diseño sencillo a partir de tu contenido</li><li>PowerPoint editable y PDF</li><li>Una ronda de ajustes</li></ul>
+        <p className={styles.note}><Link href="/ayuda-digital">¿Necesitas menos? 6 diapositivas por $250 MXN →</Link></p>
         <p className={styles.note}>Revisamos tus archivos antes de confirmar el proyecto. Trabajo adicional se cotiza por separado.</p>
       </aside>
     </section>
@@ -59,7 +61,7 @@ export default function PresentacionesPage() {
     </section>
     <section className={styles.faq}>
       <h2>Antes de empezar</h2>
-      <details><summary>¿Qué material necesito?</summary><p>Tus textos o notas, el objetivo de la presentación y a quién va dirigida. También tu logotipo, colores e imágenes si quieres que los usemos. El paquete cubre hasta 2,000 palabras de material base en español.</p></details>
+      <details><summary>¿Qué material necesito?</summary><p>Tus textos o notas, el objetivo de la presentación y a quién va dirigida. También tu logotipo, colores e imágenes si quieres que los usemos. El paquete cubre hasta 1,600 palabras de material base en español.</p></details>
       <details><summary>¿Qué incluye la ronda de ajustes?</summary><p>Una lista consolidada de correcciones de texto o diseño sobre el alcance acordado. Nuevos temas, diapositivas adicionales y un cambio completo de dirección se cotizan antes de trabajarlos.</p></details>
       <details><summary>¿Pueden investigar o escribir todo desde cero?</summary><p>Este paquete parte de tu material. La investigación, traducción, animaciones y creación de contenido desde cero requieren una cotización independiente.</p></details>
       <details><summary>¿Cómo revisan mi presentación?</summary><p>Revisamos redacción, consistencia visual y legibilidad antes de entregar. Tú confirmas los datos de tu actividad y recibes una ronda de ajustes dentro del alcance. Para cotizar, comparte una versión sin información confidencial.</p></details>
