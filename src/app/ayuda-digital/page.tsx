@@ -19,7 +19,7 @@ const creativePackages = [
   { name: 'Ordena mi hoja de cálculo', price: '$250 MXN', scope: 'Una hoja de hasta 200 filas y 10 columnas, con hasta 3 fórmulas sencillas.', result: 'Orden, filtros, formato y fórmulas de sumas, porcentajes o totales. Archivo Excel revisado con una muestra. Macros, integraciones y recuperación de datos se cotizan aparte.', time: '2 días hábiles' },
 ];
 const webPackages = [
-  { name: 'Mi página para darme a conocer', price: '$1,200 MXN', scope: 'Una página de hasta 5 secciones, en español, adaptada a celular, con tu texto, logo y hasta 8 imágenes autorizadas.', result: 'Presentación de tus servicios, botones a WhatsApp, correo y redes. Archivos del sitio y una publicación en alojamiento compatible que acordemos contigo. Dominio y alojamiento se pagan aparte; confirmamos esos costos antes de contratar. Sin tienda, pagos ni panel de administración.', time: '5 días hábiles' },
+  { name: 'Mi página para darme a conocer', price: '$1,200 MXN', scope: 'Una página de hasta 5 secciones, en español o inglés (un idioma), adaptada a celular, con tu texto, logo y hasta 8 imágenes autorizadas.', result: 'Presentación de tus servicios, botones a WhatsApp, correo y redes. Archivos del sitio y una publicación en alojamiento compatible que acordemos contigo. Dominio y alojamiento se pagan aparte; confirmamos esos costos antes de contratar. Sin tienda, pagos ni panel de administración.', time: '5 días hábiles' },
   { name: 'Mi organizador personal', price: '$1,800 MXN', scope: 'Aplicación sencilla en el navegador para un proceso: tareas, seguimiento de pedidos o cotizaciones. Hasta 3 pantallas y 8 campos por registro.', result: 'Agregar, editar, buscar y marcar estados; respaldo mediante exportación e importación de archivo. Uso individual en un navegador, con datos guardados en ese dispositivo: debes descargar tus respaldos. Incluye código e instrucciones. Sin cuentas, nube compartida, cobros ni publicación en tiendas de apps.', time: '7 días hábiles' },
   { name: 'Una aplicación para mi equipo', price: 'Cotización según funciones', scope: 'Cuando varias personas necesitan compartir clientes, pedidos, inventario o pendientes.', result: 'Primero acordamos el problema y una primera versión concreta. Accesos, almacenamiento compartido, respaldos y costos de operación se detallan en la propuesta. Te mostramos avances y comprobamos los casos de uso antes de entregar.', time: 'Fecha acordada después de revisar el alcance' },
 ];
@@ -35,7 +35,7 @@ export default function AyudaDigitalPage() {
         <p className={styles.use}>Puedes delegar un pendiente concreto, aunque sea pequeño. Confirmamos qué haremos, cuánto cuesta y cuándo lo recibirás.</p>
         <a className={styles.primary} href={contact('un pendiente digital')} target="_blank" rel="noopener noreferrer">Cuéntanos qué necesitas resolver ↗</a>
         <a className={styles.emailTop} href="mailto:codigonexo.rgz@gmail.com?subject=Ayuda%20con%20un%20pendiente">Prefiero escribir por correo</a>
-        <p className={styles.trustLine}>Atención directa con Ricardo · Servicio en español · Consulta inicial sin costo</p>
+        <p className={styles.trustLine}>Atención directa con Ricardo · Comunicación escrita en español o inglés · Consulta inicial sin costo</p>
       </div>
       <aside className={styles.offer} aria-label="Cómo funciona">
         <p>PENDIENTES PEQUEÑOS, ACUERDOS CLAROS</p>
@@ -44,7 +44,7 @@ export default function AyudaDigitalPage() {
         <p className={styles.note}>No necesitas saber cómo pedirlo técnicamente. Explícanos qué quieres conseguir.</p>
       </aside>
     </section>
-    <section id="paquetes">
+    <section><h2>Comprueba el resultado antes de contratar</h2><p>Muestras propias en inglés: documentos y presentaciones antes y después, página de servicios y organizador funcional. Son demostraciones, no trabajos atribuidos a clientes.</p><Link className={styles.primary} href="/en#samples">Ver muestras y archivos editables</Link><Link className={styles.email} href="/proceso">Cómo contratar paso a paso</Link></section><section id="paquetes">
       <p className={styles.eyebrow}>PRECIOS DE LANZAMIENTO</p>
       <h2>Elige el pendiente que quieres resolver</h2>
       <p>Precios totales en MXN para el alcance descrito. Cada paquete incluye una ronda de ajustes, solicitada en una sola lista dentro de los 7 días siguientes a la entrega.</p>
