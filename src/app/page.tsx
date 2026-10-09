@@ -14,14 +14,14 @@ import FloatingActions from '@/components/home-modern/FloatingActions';
 import styles from './home.module.css';
 
 export const metadata: Metadata = {
-  title: 'Código Nexo | Diseño, documentos, páginas web y aplicaciones',
-  description: 'Diseño gráfico, documentos, presentaciones, páginas web y aplicaciones para personas, profesionales y negocios. Servicios individuales o combinados en un mismo proyecto.',
+  title: 'Código Nexo | Soluciones digitales para estudiar, trabajar y crear',
+  description: 'Corrección, formato, presentaciones y ayuda con archivos para estudiantes, personas e independientes. También diseño gráfico, páginas web y aplicaciones.',
   alternates: {
     canonical: 'https://codigonexo.mx/',
   },
   openGraph: {
-    title: 'Código Nexo | Diseño, documentos, páginas web y aplicaciones',
-    description: 'Diseño, documentos, páginas web y aplicaciones para dar forma a tu proyecto digital.',
+    title: 'Código Nexo | Soluciones digitales para estudiar, trabajar y crear',
+    description: 'Soluciones digitales para estudiar, trabajar y crear para dar forma a tu proyecto digital.',
     url: 'https://codigonexo.mx/',
     siteName: 'Código Nexo',
     type: 'website',
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Código Nexo | Diseño, documentos, páginas web y aplicaciones',
-    description: 'Diseño, documentos, páginas web y aplicaciones para dar forma a tu proyecto digital.',
+    title: 'Código Nexo | Soluciones digitales para estudiar, trabajar y crear',
+    description: 'Soluciones digitales para estudiar, trabajar y crear para dar forma a tu proyecto digital.',
     images: ['https://codigonexo.mx/assets/images/og-image.jpg'],
   },
 };
@@ -47,6 +47,7 @@ const references = ['Su Voz a Diario', 'Club Colombia FC', 'Joga Bonito', 'Esdra
 const technologies = ['Next.js', 'React', 'Node.js', 'Firebase', 'AWS', 'Python'];
 
 const services = [
+  { title: 'Ayuda para estudiar y trabajar', text: 'Corrección, formato de documentos, exposiciones y ayuda con archivos. Paquetes pequeños desde $200 MXN.', href: '/ayuda-digital', icon: 'FileText' },
   { title: 'Diseño gráfico', text: 'Piezas para redes sociales, material promocional y diseño visual para comunicar tus servicios.', href: '#contacto', icon: 'Palette' },
   { title: 'Documentos y redacción', text: 'Redacción, corrección y organización de documentos a partir de tus ideas y materiales, con revisión del contenido.', href: '#contacto', icon: 'FileText' },
   { title: 'Páginas web', text: 'Páginas de servicios, portafolios y sitios adaptados a celulares para que puedan conocerte y contactarte.', href: '/servicios/desarrollo-web', icon: 'Globe' },
@@ -64,11 +65,11 @@ const processSteps = [
 
 const advantages = [
   { title: 'Servicios combinables', description: 'Puedes solicitar una pieza puntual o reunir diseño, documentos y desarrollo en un mismo proyecto.' },
-  { title: 'Para personas y negocios', description: 'Atendemos a profesionales independientes, creadores, emprendedores y equipos.' },
+  { title: 'También para estudiantes', description: 'Te ayudamos a corregir, organizar y presentar tu propio material, con servicios de alcance pequeño y precio claro.' },
   { title: 'Comunicación directa', description: 'Conversamos en español y explicamos las decisiones de cada etapa con claridad.' },
   { title: 'Alcance por escrito', description: 'Definimos qué incluye la propuesta y cotizamos por separado las ampliaciones.' },
   { title: 'Experiencia creativa', description: 'Más de 10 años de experiencia en diseño gráfico y PowerPoint.' },
-  { title: 'IA con revisión', description: 'Utilizamos inteligencia artificial como apoyo y revisamos el contenido, el diseño y el funcionamiento.' },
+  { title: 'Entregas revisadas', description: 'Comprobamos el formato y el funcionamiento acordado, y te explicamos cómo utilizar tus archivos.' },
 ];
 
 const portfolioItems = [
@@ -95,11 +96,11 @@ export default function Home() {
     <>
       <main className={styles.main}>
         <HomeHero
-          eyebrow="Diseño · Documentos · Desarrollo web"
-          title="Diseño, páginas web y aplicaciones para dar forma a tus ideas"
-          description="Ayudamos a personas, profesionales y negocios con diseño gráfico, documentos, presentaciones y desarrollo digital. Contrata un servicio o combínalos en un proyecto con alcance y precio acordados."
-          primaryCta={{ label: 'Cuéntanos tu proyecto', href: '#contacto' }}
-          secondaryCta={{ label: 'Explorar servicios', href: '#servicios' }}
+          eyebrow="Para personas · Estudiantes · Independientes"
+          title="¿Se te complica o no tienes tiempo? Te ayudamos a dejarlo listo."
+          description="Corregimos y damos formato a tus documentos, organizamos tus presentaciones y te ayudamos con archivos de trabajo. También creamos diseño gráfico, páginas web y aplicaciones. Cuéntanos qué necesitas resolver."
+          primaryCta={{ label: 'Necesito ayuda con un pendiente', href: '#contacto' }}
+          secondaryCta={{ label: 'Ver opciones desde $200 MXN', href: '/ayuda-digital' }}
           brands={references}
           technologies={technologies}
         />
@@ -107,10 +108,10 @@ export default function Home() {
         <PageSection id="profesionales">
           <PageContainer>
             <div className={styles.sectionIntro}>
-              <p className={styles.eyebrow}>Para personas y profesionales independientes</p>
-              <h2 className={styles.title}>Tu conocimiento merece una buena presentación</h2>
-              <p className={styles.description}>¿Vas a ofrecer tus servicios, impartir un taller o presentar una idea? Organizamos tu contenido y diseñamos hasta 12 diapositivas. Recibes PowerPoint editable y PDF por $1,500 MXN.</p>
-              <div className={styles.sectionAction}><Link href="/presentaciones" className={styles.secondaryLink}>Ver paquete y muestra de presentación →</Link></div>
+              <p className={styles.eyebrow}>Ayuda para estudiar y trabajar</p>
+              <h2 className={styles.title}>Tu pendiente puede empezar a resolverse hoy</h2>
+              <p className={styles.description}>Un texto por corregir, un documento que se desacomoda o una exposición por preparar. Tenemos paquetes pequeños desde $200 MXN y revisamos tu material antes de confirmar precio y entrega.</p>
+              <div className={styles.sectionAction}><Link href="/ayuda-digital" className={styles.secondaryLink}>Ver paquetes, precios y qué incluyen →</Link></div>
             </div>
           </PageContainer>
         </PageSection>
@@ -121,7 +122,7 @@ export default function Home() {
               <p className={styles.eyebrow}>Servicios</p>
               <h2 className={styles.title}>Lo que necesitas para comunicar, publicar y crear</h2>
               <p className={styles.description}>
-                Elige un servicio o reúne varios en una propuesta. Cada proyecto se cotiza según sus entregables; el precio del paquete de presentaciones corresponde únicamente a ese servicio.
+                Elige un servicio o reúne varios en una propuesta. Puedes empezar con un pendiente pequeño o solicitar una solución completa. Confirmamos el alcance y el precio antes de trabajar.
               </p>
             </div>
             <PageGrid columns={3}>
@@ -194,9 +195,9 @@ export default function Home() {
           <PageContainer>
             <div className={styles.sectionIntro}>
               <p className={styles.eyebrow}>Contacto</p>
-              <h2 className={styles.title}>Cuéntanos qué quieres crear</h2>
+              <h2 className={styles.title}>¿Qué necesitas resolver?</h2>
               <p className={styles.description}>
-                Dinos qué servicio necesitas, para quién es y cuándo te gustaría tenerlo. Con esa información prepararemos el siguiente paso.
+                Cuéntanos qué se te complica, qué material tienes y para cuándo lo necesitas. Revisar tu solicitud no genera ningún cobro.
               </p>
             </div>
             <ContactSection
