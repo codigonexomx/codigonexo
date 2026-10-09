@@ -164,13 +164,24 @@ export default function Home() {
           technologies={technologies}
         />
 
+        <PageSection id="profesionales">
+          <PageContainer>
+            <div className={styles.sectionIntro}>
+              <p className={styles.eyebrow}>Para personas y profesionales independientes</p>
+              <h2 className={styles.title}>Tu conocimiento merece una buena presentación</h2>
+              <p className={styles.description}>¿Vas a ofrecer tus servicios, impartir un taller o presentar una idea? Organizamos tu contenido y diseñamos hasta 12 diapositivas. Recibes PowerPoint editable y PDF por $1,500 MXN.</p>
+              <div className={styles.sectionAction}><Link href="/presentaciones" className={styles.secondaryLink}>Ver paquete y muestra de presentación →</Link></div>
+            </div>
+          </PageContainer>
+        </PageSection>
+
         <PageSection id="servicios" theme="darker">
           <PageContainer>
             <div className={styles.sectionIntro}>
               <p className={styles.eyebrow}>Servicios</p>
               <h2 className={styles.title}>Soluciones tecnológicas para proyectos que necesitan estructura</h2>
               <p className={styles.description}>
-                Una selección de servicios modernos conectados con páginas reales del sitio. El catálogo completo está disponible para revisar cada línea de trabajo.
+                Desarrollo web, automatización e integraciones para resolver tareas concretas y acompañar el crecimiento de tu proyecto.
               </p>
             </div>
             <PageGrid columns={3}>
@@ -216,9 +227,9 @@ export default function Home() {
           <PageContainer>
             <div className={styles.sectionIntro}>
               <p className={styles.eyebrow}>Portafolio</p>
-              <h2 className={styles.title}>Referencias de proyectos mencionados</h2>
+              <h2 className={styles.title}>Proyectos en desarrollo</h2>
               <p className={styles.description}>
-                Estos son proyectos y referencias que ya aparecían en el Home anterior. No se agregan métricas ni casos documentados adicionales en esta fase.
+                Una selección de iniciativas en las que trabajamos. Consulta su estado y alcance antes de solicitar una solución similar.
               </p>
             </div>
             <PortfolioPreviewGrid items={portfolioItems} />
