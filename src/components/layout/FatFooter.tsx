@@ -17,6 +17,7 @@ export default function FatFooter() {
         
         <div className={styles.column}>
           <div className={styles.title}>Servicios</div>
+          <Link href="/presentaciones" className={styles.link}>Presentaciones profesionales</Link>
           {footerNav.servicios.map(link => (
             <Link key={link.href} href={link.href} className={styles.link}>{link.title}</Link>
           ))}
