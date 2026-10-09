@@ -2,6 +2,7 @@ import { BookOpen, BriefcaseBusiness, Building2, FileText, Cpu, GitBranch, Globe
 
 export const navigationConfig = {
   mainNav: [
+    { title: "English", items: [{ title: "Services in English", href: "/en", description: "Documents, presentations and simple websites.", icon: Globe }] },
     {
       title: "Servicios",
       items: [
@@ -24,9 +25,9 @@ export const navigationConfig = {
       ]
     },
     {
-      title: "Trust",
+      title: "Cómo trabajamos",
       items: [
-        { title: "Seguridad & Compliance", href: "/trust/seguridad-compliance", description: "Protección de datos y SLAs.", icon: Shield },
+        { title: "Archivos y soporte", href: "/trust/seguridad-compliance", description: "Alcance del soporte y los respaldos.", icon: Shield },
         { title: "Portafolio", href: "/#portafolio", description: "Proyectos y casos presentados en el home.", icon: Rocket },
       ]
     }
@@ -69,7 +70,7 @@ export const navigationConfig = {
       { title: "Centro de Conocimiento", href: "/recursos" },
       { title: "Diagnóstico Tecnológico", href: "/diagnostico" },
       { title: "Portafolio", href: "/#portafolio" },
-      { title: "Seguridad y Compliance", href: "/trust/seguridad-compliance" },
+      { title: "Archivos y soporte", href: "/trust/seguridad-compliance" },
       { title: "Contacto", href: "/#contacto" }
     ],
     legal: [] as { title: string; href: string }[]
