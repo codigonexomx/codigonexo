@@ -101,7 +101,7 @@ export default function HomeContactForm({ onOpenPrivacy, privacyTriggerRef }: Ho
         />
       </div>
       <button type="submit" className={styles.submit} disabled={isLoading}>
-        {isLoading ? 'Enviando...' : 'Solicitar revisión técnica'}
+        {isLoading ? 'Enviando...' : 'Enviar consulta'}
       </button>
       {status === 'error' && (
         <p className={styles.error} role="alert">
