@@ -8,7 +8,7 @@ interface Props {
   label?: string;
 }
 
-export default function GlobalCTA({ variant = 'small', onClick, label = 'Agendar Auditoría' }: Props) {
+export default function GlobalCTA({ variant = 'small', onClick, label = 'Consultar proyecto' }: Props) {
   return (
     <Link 
       href="/#contacto" 
