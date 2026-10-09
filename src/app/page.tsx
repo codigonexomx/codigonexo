@@ -48,16 +48,16 @@ const technologies = ['Next.js', 'React', 'Node.js', 'Firebase', 'AWS', 'Python'
 
 const services = [
   { title: 'Ayuda para estudiar y trabajar', text: 'Corrección, formato de documentos, exposiciones y ayuda con archivos. Paquetes pequeños desde $100 MXN.', href: '/ayuda-digital', icon: 'FileText' },
-  { title: 'Diseño gráfico', text: 'Piezas para redes sociales, material promocional y diseño visual para comunicar tus servicios.', href: '#contacto', icon: 'Palette' },
+  { title: 'Diseño gráfico', text: '¿No sabes cómo presentar tu servicio? Una pieza desde $150 MXN; 4 por $500.', href: '/ayuda-digital#diseno-y-archivos', icon: 'Palette' },
   { title: 'Documentos y redacción', text: 'Redacción, corrección y organización de documentos a partir de tus ideas y materiales, con revisión del contenido.', href: '#contacto', icon: 'FileText' },
-  { title: 'Páginas web', text: 'Páginas de servicios, portafolios y sitios adaptados a celulares para que puedan conocerte y contactarte.', href: '/servicios/desarrollo-web', icon: 'Globe' },
-  { title: 'Aplicaciones y software', text: 'Herramientas a la medida para organizar información y resolver tareas. Definimos una primera versión con alcance concreto.', href: '/servicios/desarrollo-software', icon: 'Code' },
+  { title: 'Páginas web', text: 'Que puedan conocerte y escribirte: página de hasta 5 secciones por $1,200 MXN. Consulta lo que incluye.', href: '/ayuda-digital#web-y-apps', icon: 'Globe' },
+  { title: 'Aplicaciones y software', text: 'Pon orden en tus pendientes: organizador de uso individual por $1,800 MXN. Sistemas compartidos se cotizan según funciones.', href: '/ayuda-digital#web-y-apps', icon: 'Code' },
   { title: 'Presentaciones editables', text: 'Organización de contenido y diseño en PowerPoint. Consulta el paquete de hasta 12 diapositivas y su muestra.', href: '/presentaciones', icon: 'Presentation' },
   { title: 'Automatización e integraciones', text: 'Conecta herramientas y reduce tareas repetitivas mediante flujos acordados para tu proyecto.', href: '/servicios/automatizacion', icon: 'Bot' },
 ] as const;
 
 const processSteps = [
-  { title: 'Tu idea y objetivo', description: 'Nos cuentas qué necesitas, para quién y qué materiales tienes disponibles.' },
+  { title: 'Primero te escucho', description: 'Me cuentas qué está pasando, qué te cuesta trabajo y qué resultado necesitas.' },
   { title: 'Propuesta clara', description: 'Acordamos entregables, precio, fechas y revisiones antes de comenzar.' },
   { title: 'Creación por etapas', description: 'Revisas avances de diseño, contenido o desarrollo para validar el rumbo del proyecto.' },
   { title: 'Revisión y entrega', description: 'Comprobamos los entregables y compartimos los archivos y las indicaciones acordadas.' },
@@ -96,9 +96,9 @@ export default function Home() {
     <>
       <main className={styles.main}>
         <HomeHero
-          eyebrow="Para personas · Estudiantes · Independientes"
+          eyebrow="Para personas · Estudiantes · Negocios"
           title="¿Se te complica o no tienes tiempo? Te ayudamos a dejarlo listo."
-          description="Corregimos y damos formato a tus documentos, organizamos tus presentaciones y te ayudamos con archivos de trabajo. También creamos diseño gráfico, páginas web y aplicaciones. Cuéntanos qué necesitas resolver."
+          description="Soy Ricardo. Cuéntame qué te está quitando tiempo o qué no has podido resolver. Te ayudo con tus documentos, diseños y presentaciones, o con una página web y una aplicación sencilla para organizar tu trabajo. Acordamos alcance y precio antes de empezar."
           primaryCta={{ label: 'Necesito ayuda con un pendiente', href: '#contacto' }}
           secondaryCta={{ label: 'Ver opciones desde $100 MXN', href: '/ayuda-digital' }}
           brands={references}
@@ -110,8 +110,8 @@ export default function Home() {
             <div className={styles.sectionIntro}>
               <p className={styles.eyebrow}>Ayuda para estudiar y trabajar</p>
               <h2 className={styles.title}>Tu pendiente puede empezar a resolverse hoy</h2>
-              <p className={styles.description}>Un texto por corregir, un documento que se desacomoda o una exposición por preparar. Tenemos paquetes pequeños desde $100 MXN y revisamos tu material antes de confirmar precio y entrega.</p>
-              <div className={styles.sectionAction}><Link href="/ayuda-digital" className={styles.secondaryLink}>Ver paquetes, precios y qué incluyen →</Link></div>
+              <p className={styles.description}>Documentos desde $100 MXN, páginas de presentación por $1,200 y organizadores personales por $1,800. También CV, diseño y hojas de cálculo. Revisa los alcances; podemos empezar por lo que más te urge.</p>
+              <div className={styles.sectionAction}><Link href="/ayuda-digital" className={styles.secondaryLink}>Ver todos los paquetes y qué incluyen →</Link></div>
             </div>
           </PageContainer>
         </PageSection>
@@ -120,7 +120,7 @@ export default function Home() {
           <PageContainer>
             <div className={styles.sectionIntro}>
               <p className={styles.eyebrow}>Servicios</p>
-              <h2 className={styles.title}>Lo que necesitas para comunicar, publicar y crear</h2>
+              <h2 className={styles.title}>Cuéntame el problema. Busquemos cómo resolverlo.</h2>
               <p className={styles.description}>
                 Elige un servicio o reúne varios en una propuesta. Puedes empezar con un pendiente pequeño o solicitar una solución completa. Confirmamos el alcance y el precio antes de trabajar.
               </p>
