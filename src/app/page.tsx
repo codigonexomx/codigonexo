@@ -51,7 +51,7 @@ const services = [
   { title: 'Diseño gráfico', text: '¿No sabes cómo presentar tu servicio? Una pieza desde $150 MXN; 4 por $500.', href: '/ayuda-digital#diseno-y-archivos', icon: 'Palette' },
   { title: 'Documentos y redacción', text: 'Redacción, corrección y organización de documentos a partir de tus ideas y materiales, con revisión del contenido.', href: '#contacto', icon: 'FileText' },
   { title: 'Páginas web', text: 'Que puedan conocerte y escribirte: página de hasta 5 secciones por $1,200 MXN. Consulta lo que incluye.', href: '/ayuda-digital#web-y-apps', icon: 'Globe' },
-  { title: 'Aplicaciones y software', text: 'Pon orden en tus pendientes: organizador de uso individual por $1,800 MXN. Sistemas compartidos se cotizan según funciones.', href: '/ayuda-digital#web-y-apps', icon: 'Code' },
+  { title: 'Aplicaciones y software', text: 'PWA instalables y aplicaciones para Android y Mac, cotizadas según funciones. También organizador individual en navegador por $1,800 MXN; consulta su alcance.', href: '/ayuda-digital#web-y-apps', icon: 'Code' },
   { title: 'Presentaciones editables', text: 'Organización de contenido y diseño en PowerPoint. Consulta el paquete de hasta 12 diapositivas y su muestra.', href: '/presentaciones', icon: 'Presentation' },
   { title: 'Automatización e integraciones', text: 'Conecta herramientas y reduce tareas repetitivas mediante flujos acordados para tu proyecto.', href: '/servicios/automatizacion', icon: 'Bot' },
 ] as const;
