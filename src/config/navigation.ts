@@ -9,7 +9,7 @@ export const navigationConfig = {
         { title: "Documentos, Excel y ajustes web", href: "/ayuda-digital#paquetes", description: "Precios y alcances para resolver un pendiente concreto.", icon: FileText },
         { title: "Presentaciones", href: "/presentaciones", description: "Tu contenido organizado y listo para presentar.", icon: FileText },
         { title: "Diseño, CV y hojas de cálculo", href: "/ayuda-digital#diseno-y-archivos", description: "Para comunicarte, buscar trabajo y poner orden.", icon: FileText },
-        { title: "Páginas web y aplicaciones", href: "/ayuda-digital#web-y-apps", description: "Para darte a conocer y organizar tus pendientes.", icon: Globe },
+        { title: "Páginas web y aplicaciones", href: "/ayuda-digital#web-y-apps", description: "Páginas, PWA instalables y apps para Android y Mac.", icon: Globe },
       ]
     },
     {
@@ -33,6 +33,7 @@ export const navigationConfig = {
     }
   ],
   servicesIndex: [
+    { title: "Páginas web y aplicaciones", href: "/ayuda-digital#web-y-apps", description: "Webs, PWA instalables y apps para Android y Mac. Primera versión con alcance, pruebas y precio acordados.", icon: "Globe" },
     { title: "Formato Word y PDF", href: "/ayuda-digital#paquetes", description: "$150 MXN: hasta 3 páginas y 900 palabras de tu contenido. Editable y PDF, con una ronda de ajustes.", icon: "FileText" },
     { title: "Limpieza de Excel", href: "/ayuda-digital#paquetes", description: "$250 MXN: una hoja de hasta 200 filas y 10 columnas. Original conservado, reglas acordadas y cambios documentados.", icon: "Palette" },
     { title: "Ajustes de páginas web", href: "/ayuda-digital#paquetes", description: "Desde $350 MXN después de diagnóstico para un cambio localizado. Confirmamos tecnología, precio y fecha antes de empezar.", icon: "Globe" },
