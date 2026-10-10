@@ -6,7 +6,7 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: 'Presentaciones profesionales desde tu contenido | Código Nexo',
   description: 'Ordenamos tus ideas y diseñamos tu presentación. Hasta 12 diapositivas, PowerPoint editable y PDF, con una ronda de ajustes. Paquete inicial de $450 MXN.',
-  openGraph: { title: 'Tu presentación, lista para mostrar | Código Nexo', description: 'Hasta 12 diapositivas, PowerPoint editable y PDF. Paquete de $450 MXN.', url: 'https://codigonexo.mx/presentaciones', images: [{ url: '/muestras/presentaciones/slide-1.png', width: 1280, height: 720, alt: 'Ejemplo ficticio de presentación de capacitación' }] },
+  openGraph: { title: 'Tu presentación, lista para mostrar | Código Nexo', description: 'Hasta 12 diapositivas, PowerPoint editable y PDF. Paquete de $450 MXN.', url: 'https://codigonexo.mx/presentaciones', images: [{ url: '/muestras/presentaciones/slide-1.png', width: 1280, height: 720, alt: 'Muestra ficticia de diseño de presentación' }] },
   alternates: { canonical: '/presentaciones' },
 };
 const whatsapp = 'https://wa.me/525529058845?text=' + encodeURIComponent('Hola, vi el paquete de presentaciones de Código Nexo. Necesito una presentación para: ___. Tengo este material: ___. Mi fecha objetivo es: ___. ¿Podemos revisar el alcance?');
@@ -22,7 +22,7 @@ export default function PresentacionesPage() {
         <p className={styles.eyebrow}>PARA ESTUDIANTES, PERSONAS E INDEPENDIENTES</p>
         <h1>Tu próxima presentación,<br /><em>lista para mostrar.</em></h1>
         <p className={styles.intro}>Tú conoces tu trabajo. Nosotros organizamos tus ideas y las convertimos en una presentación clara, cuidada y editable.</p>
-        <p className={styles.use}>Para ofrecer tus servicios, presentar un proyecto o impartir una capacitación.</p>
+        <p className={styles.use}>Para ofrecer tus servicios, presentar un proyecto o explicar tus ideas.</p>
         <a className={styles.primary} href={whatsapp} target="_blank" rel="noopener noreferrer">Quiero preparar mi presentación ↗</a>
         <a className={styles.emailTop} href="mailto:codigonexo.rgz@gmail.com?subject=Mi%20presentaci%C3%B3n&body=Objetivo%3A%20%0AAudiencia%3A%20%0AFecha%20deseada%3A%20%0AMaterial%20disponible%3A%20">Prefiero consultar por correo</a>
         <p className={styles.trustLine}>Atención directa con Ricardo · México · Servicio en español</p>
@@ -41,17 +41,17 @@ export default function PresentacionesPage() {
       <h2 id="para-quien">No necesitas tener una empresa</h2>
       <div className={styles.audiences}>
         <article><h3>Ofrece tus servicios</h3><p>Convierte tus notas en una propuesta clara para tus próximos clientes, como profesional independiente o emprendedor.</p></article>
-        <article><h3>Prepara tu taller</h3><p>Organiza tu material para una clase, una capacitación o una charla que tú vas a impartir.</p></article>
+        <article><h3>Presenta tu propuesta</h3><p>Ordenamos tus notas y diseñamos las diapositivas para que tú presentes tu propuesta.</p></article>
         <article><h3>Explica tu proyecto</h3><p>Presenta una idea propia, un portafolio o los avances de tu trabajo con una estructura fácil de seguir.</p></article>
       </div>
     </section>
     <section className={styles.sample} id="muestra">
       <p className={styles.eyebrow}>UNA IDEA, MEJOR PRESENTADA</p>
       <h2>Así podría verse tu contenido</h2>
-      <p>Ejemplo ficticio de una propuesta de capacitación. Muestra de diseño, sin relación con un cliente real.</p>
+      <p>Muestra ficticia de diseño de diapositivas, sin relación con un cliente real. El tema del archivo es solo un ejemplo: Código Nexo prepara documentos y presentaciones por encargo; no imparte clases, cursos ni capacitación de IA.</p>
       <div className={styles.previewGrid}>
         <figure><Image src="/muestras/presentaciones/slide-1.png" alt="Portada: Conversaciones que aclaran el siguiente paso" width={1280} height={720} /><figcaption>Un título que explica la propuesta.</figcaption></figure>
-        <figure><Image src="/muestras/presentaciones/slide-3.png" alt="Programa del taller organizado en tres temas" width={1280} height={720} /><figcaption>Contenido organizado para seguir la explicación.</figcaption></figure>
+        <figure><Image src="/muestras/presentaciones/slide-3.png" alt="Contenido de ejemplo organizado en tres temas" width={1280} height={720} /><figcaption>Contenido organizado para seguir la explicación.</figcaption></figure>
       </div>
       <div className={styles.downloads}><a href="/muestras/presentaciones/muestra-capacitacion.pdf" target="_blank" rel="noopener noreferrer">Ver muestra completa en PDF ↗</a><a href="/muestras/presentaciones/muestra-capacitacion.pptx" download>Descargar PowerPoint editable ↓</a></div>
     </section>
