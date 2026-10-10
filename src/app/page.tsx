@@ -98,7 +98,7 @@ export default function Home() {
         <HomeHero
           eyebrow="Para personas · Estudiantes · Negocios"
           title="¿Se te complica o no tienes tiempo? Te ayudamos a dejarlo listo."
-          description="Soy Ricardo. Cuéntame qué te está quitando tiempo o qué no has podido resolver. Te ayudo con tus documentos, diseños y presentaciones, o con una página web y una aplicación sencilla para organizar tu trabajo. Acordamos alcance y precio antes de empezar."
+          description="Soy Ricardo. ¿Se desacomodó tu documento, tu Excel necesita orden o un botón de tu web no funciona? Revisamos una muestra, acordamos el cambio y te entregamos una solución comprobada. Precio y fecha por escrito antes de empezar. Atención en español e inglés."
           primaryCta={{ label: 'Necesito ayuda con un pendiente', href: '#contacto' }}
           secondaryCta={{ label: 'Ver opciones desde $100 MXN', href: '/ayuda-digital' }}
           brands={references}
@@ -109,8 +109,8 @@ export default function Home() {
           <PageContainer>
             <div className={styles.sectionIntro}>
               <p className={styles.eyebrow}>Ayuda para estudiar y trabajar</p>
-              <h2 className={styles.title}>Tu pendiente puede empezar a resolverse hoy</h2>
-              <p className={styles.description}>Documentos desde $100 MXN, páginas de presentación por $1,200 y organizadores personales por $1,800. También CV, diseño y hojas de cálculo. Revisa los alcances; podemos empezar por lo que más te urge.</p>
+              <h2 className={styles.title}>Un problema concreto. Una entrega que puedas usar.</h2>
+              <p className={styles.description}>Formato Word y PDF por $150 MXN, limpieza de Excel por $250 y ajustes web desde $350 después de diagnóstico. Cada servicio tiene un alcance definido. También presentaciones, diseño, páginas nuevas y aplicaciones según tu necesidad.</p>
               <div className={styles.sectionAction}><Link href="/ayuda-digital" className={styles.secondaryLink}>Ver todos los paquetes y qué incluyen →</Link></div>
             </div>
           </PageContainer>
