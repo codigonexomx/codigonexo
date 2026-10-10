@@ -3,12 +3,14 @@ import Link from 'next/link';
 import styles from '../presentaciones/page.module.css';
 
 export const metadata: Metadata = {
-  title: 'Documentos, diseño, páginas web y apps sencillas | Código Nexo',
-  description: 'Resuelve tus pendientes: documentos desde $100 MXN, web de presentación por $1,200 y app personal de organización por $1,800. Consulta alcances y entregas.',
+  title: 'Arregla tu documento, Excel o página web | Código Nexo',
+  description: 'Formato Word y PDF por $150 MXN, limpieza de Excel por $250 y ajustes web desde $350 después de diagnóstico. Alcance, precio y fecha por escrito.',
   alternates: { canonical: '/ayuda-digital' },
 };
 
 const packages = [
+  { name: 'Ordena y limpia mi Excel', price: '$250 MXN', scope: 'Una hoja de hasta 200 filas y 10 columnas. Hasta 3 fórmulas sencillas de sumas, porcentajes o totales.', result: 'Formato consistente, filtros y revisión de duplicados según una regla acordada. Conservamos el original y entregamos el archivo revisado con una lista de cambios y datos que requieren tu confirmación. Sin macros ni integraciones.', time: '2 días hábiles' },
+  { name: 'Arregla un detalle de mi web', price: 'Desde $350 MXN, después de diagnóstico', scope: 'Un ajuste localizado: un botón, enlace, texto o detalle visual en una página. Primero verificamos la tecnología, el acceso y la causa.', result: 'Cambio acordado y comprobación en computadora y celular cuando aplique. Copia previa de los archivos afectados. Sin rediseño completo, recuperación de sitios, pagos ni integraciones. Si no podemos resolverlo dentro de este alcance, te lo indicamos antes de contratar.', time: 'Fecha confirmada por escrito tras el diagnóstico' },
   { name: 'Corrige mi texto', price: '$100 MXN', scope: 'Hasta 500 palabras en español, en un archivo editable.', result: 'Ortografía, puntuación y ajustes de claridad sin cambiar tus ideas. Entrega con cambios señalados y versión limpia.', time: '2 días hábiles' },
   { name: 'Dale formato a mi documento', price: '$150 MXN', scope: 'Hasta 3 páginas y 900 palabras, con un máximo de 1 tabla o imagen proporcionada.', result: 'Títulos, márgenes, tipografía y numeración consistentes. Word editable y PDF. Partimos de tu texto terminado.', time: '2 días hábiles' },
   { name: 'Prepara mi exposición', price: '$250 MXN', scope: 'Hasta 6 diapositivas y 800 palabras de contenido proporcionado.', result: 'Orden del contenido, diseño legible y corrección ortográfica. PowerPoint editable y PDF para que presentes tus ideas.', time: '3 días hábiles' },
@@ -30,7 +32,7 @@ export default function AyudaDigitalPage() {
     <section className={styles.hero}>
       <div>
         <p className={styles.eyebrow}>PERSONAS · ESTUDIANTES · NEGOCIOS</p>
-        <h1>¿Se te complica?<br /><em>Te ayudamos a dejarlo listo.</em></h1>
+        <h1>¿Tu archivo o tu web no queda bien?<br /><em>Te ayudamos a resolverlo.</em></h1>
         <p className={styles.intro}>Se acerca la entrega, tu documento no queda como quieres o llevas los pendientes entre notas y mensajes. Cuéntame qué está pasando: soy Ricardo y te ayudo a encontrar una solución práctica, desde arreglar un archivo hasta crear tu página o una aplicación sencilla.</p>
         <p className={styles.use}>Puedes delegar un pendiente concreto, aunque sea pequeño. Confirmamos qué haremos, cuánto cuesta y cuándo lo recibirás.</p>
         <a className={styles.primary} href={contact('un pendiente digital')} target="_blank" rel="noopener noreferrer">Cuéntanos qué necesitas resolver ↗</a>
@@ -45,7 +47,7 @@ export default function AyudaDigitalPage() {
       </aside>
     </section>
     <section><h2>Comprueba el resultado antes de contratar</h2><p>Muestras propias en inglés: documentos y presentaciones antes y después, página de servicios y organizador funcional. Son demostraciones, no trabajos atribuidos a clientes.</p><Link className={styles.primary} href="/en#samples">Ver muestras y archivos editables</Link><Link className={styles.email} href="/proceso">Cómo contratar paso a paso</Link></section><section id="paquetes">
-      <p className={styles.eyebrow}>PRECIOS DE LANZAMIENTO</p>
+      <p className={styles.eyebrow}>SOLUCIONES CON ALCANCE CLARO</p>
       <h2>Elige el pendiente que quieres resolver</h2>
       <p>Precios totales en MXN para el alcance descrito. Cada paquete incluye una ronda de ajustes, solicitada en una sola lista dentro de los 7 días siguientes a la entrega.</p>
       <div className={styles.audiences}>{packages.map(item => <article key={item.name}>
