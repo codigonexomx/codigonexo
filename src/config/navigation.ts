@@ -2,11 +2,11 @@ import { BookOpen, BriefcaseBusiness, Building2, FileText, Cpu, GitBranch, Globe
 
 export const navigationConfig = {
   mainNav: [
-    { title: "English", items: [{ title: "Services in English", href: "/en", description: "Documents, presentations and simple websites.", icon: Globe }] },
+    { title: "English", items: [{ title: "Services in English", href: "/en", description: "Document formatting, spreadsheet cleanup and website fixes.", icon: Globe }] },
     {
       title: "Servicios",
       items: [
-        { title: "Ayuda digital desde $100", href: "/ayuda-digital", description: "Un pendiente concreto, una solución clara.", icon: FileText },
+        { title: "Documentos, Excel y ajustes web", href: "/ayuda-digital#paquetes", description: "Precios y alcances para resolver un pendiente concreto.", icon: FileText },
         { title: "Presentaciones", href: "/presentaciones", description: "Tu contenido organizado y listo para presentar.", icon: FileText },
         { title: "Diseño, CV y hojas de cálculo", href: "/ayuda-digital#diseno-y-archivos", description: "Para comunicarte, buscar trabajo y poner orden.", icon: FileText },
         { title: "Páginas web y aplicaciones", href: "/ayuda-digital#web-y-apps", description: "Para darte a conocer y organizar tus pendientes.", icon: Globe },
@@ -33,9 +33,9 @@ export const navigationConfig = {
     }
   ],
   servicesIndex: [
-    { title: "Documentos y exposiciones", href: "/ayuda-digital", description: "Corrección, formato y presentaciones desde tu material. Paquetes desde $100 MXN.", icon: "FileText" },
-    { title: "Diseño, CV y hojas de cálculo", href: "/ayuda-digital#diseno-y-archivos", description: "Comunica tus servicios y ordena tus archivos con ayuda concreta.", icon: "Palette" },
-    { title: "Páginas web y aplicaciones", href: "/ayuda-digital#web-y-apps", description: "Una página para que te conozcan y herramientas para organizar tu trabajo. Consulta precios y alcance.", icon: "Globe" },
+    { title: "Formato Word y PDF", href: "/ayuda-digital#paquetes", description: "$150 MXN: hasta 3 páginas y 900 palabras de tu contenido. Editable y PDF, con una ronda de ajustes.", icon: "FileText" },
+    { title: "Limpieza de Excel", href: "/ayuda-digital#paquetes", description: "$250 MXN: una hoja de hasta 200 filas y 10 columnas. Original conservado, reglas acordadas y cambios documentados.", icon: "Palette" },
+    { title: "Ajustes de páginas web", href: "/ayuda-digital#paquetes", description: "Desde $350 MXN después de diagnóstico para un cambio localizado. Confirmamos tecnología, precio y fecha antes de empezar.", icon: "Globe" },
   ],
   futureNav: {
     soluciones: [
