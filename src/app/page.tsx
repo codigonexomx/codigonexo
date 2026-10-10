@@ -79,9 +79,9 @@ const portfolioItems = [
     description: 'Plataforma orientada a gestionar evaluaciones y reportes dentro de procesos de talento.',
   },
   {
-    name: 'Plataforma de Capacitación Sector Salud',
-    category: 'Capacitación digital',
-    description: 'LMS a la medida para organizar contenidos, seguimiento y emisión de certificados.',
+    name: 'Organizador de tareas',
+    category: 'Demostración de aplicación web',
+    description: 'Muestra propia para registrar pendientes, buscar y exportar respaldos. Desarrollo de herramientas por encargo.',
   },
 ];
 
