@@ -76,7 +76,7 @@ export const resourceArticles: ResourceArticle[] = [
         title: 'Soporte y evolución también forman parte de la decisión',
         body: [
           'Después del lanzamiento pueden aparecer ajustes, nuevas reglas, integraciones adicionales o mejoras de experiencia. Por eso conviene pensar desde el inicio si el proyecto requerirá soporte, monitoreo o evolución continua.',
-          'Un presupuesto responsable debe distinguir construcción inicial, despliegue, capacitación operativa, soporte y mejoras posteriores.',
+          'Un presupuesto responsable debe distinguir construcción inicial, despliegue, instrucciones de uso, soporte y mejoras posteriores.',
         ],
       },
     ],
