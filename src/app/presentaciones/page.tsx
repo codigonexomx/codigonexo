@@ -25,7 +25,7 @@ export default function PresentacionesPage() {
         <p className={styles.use}>Para ofrecer tus servicios, presentar un proyecto o explicar tus ideas.</p>
         <a className={styles.primary} href={whatsapp} target="_blank" rel="noopener noreferrer">Quiero preparar mi presentación ↗</a>
         <a className={styles.emailTop} href="mailto:codigonexo.rgz@gmail.com?subject=Mi%20presentaci%C3%B3n&body=Objetivo%3A%20%0AAudiencia%3A%20%0AFecha%20deseada%3A%20%0AMaterial%20disponible%3A%20">Prefiero consultar por correo</a>
-        <p className={styles.trustLine}>Atención directa con Ricardo · México · Servicio en español</p>
+        <p className={styles.trustLine}>Atención directa de Código Nexo · México · Servicio en español</p>
         <a className={styles.secondary} href="#muestra">Ver una muestra ↓</a>
       </div>
       <aside className={styles.offer} aria-label="Paquete inicial">
