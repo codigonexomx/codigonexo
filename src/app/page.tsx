@@ -98,7 +98,7 @@ export default function Home() {
         <HomeHero
           eyebrow="Para personas · Estudiantes · Negocios"
           title="¿Se te complica o no tienes tiempo? Te ayudamos a dejarlo listo."
-          description="Soy Ricardo. ¿Se desacomodó tu documento, tu Excel necesita orden o un botón de tu web no funciona? Revisamos una muestra, acordamos el cambio y te entregamos una solución comprobada. Precio y fecha por escrito antes de empezar. Atención en español e inglés."
+          description="¿Se desacomodó tu documento, tu Excel necesita orden o un botón de tu web no funciona? Revisamos una muestra, acordamos el cambio y te entregamos una solución comprobada. Precio y fecha por escrito antes de empezar. Atención en español e inglés."
           primaryCta={{ label: 'Necesito ayuda con un pendiente', href: '#contacto' }}
           secondaryCta={{ label: 'Ver opciones desde $100 MXN', href: '/ayuda-digital' }}
           brands={references}
@@ -185,7 +185,7 @@ export default function Home() {
             </div>
             <AboutCompact
               title="Código Nexo reúne diseño gráfico, documentos y desarrollo digital."
-              body="Soy Ricardo. Trabajo contigo para convertir tus ideas en piezas visuales, documentos, páginas web y aplicaciones, con comunicación directa y entregables definidos."
+              body="En Código Nexo trabajamos contigo para convertir tus ideas en piezas visuales, documentos, páginas web y aplicaciones, con comunicación directa y entregables definidos."
               highlights={aboutHighlights}
             />
           </PageContainer>
