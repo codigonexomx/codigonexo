@@ -36,11 +36,11 @@ export default function AyudaDigitalPage() {
       <div>
         <p className={styles.eyebrow}>PERSONAS · ESTUDIANTES · NEGOCIOS</p>
         <h1>¿Tu archivo o tu web no queda bien?<br /><em>Te ayudamos a resolverlo.</em></h1>
-        <p className={styles.intro}>Se acerca la entrega, tu documento no queda como quieres o llevas los pendientes entre notas y mensajes. Cuéntame qué está pasando: soy Ricardo y te ayudo a encontrar una solución práctica, desde arreglar un archivo hasta crear tu página o una aplicación sencilla.</p>
+        <p className={styles.intro}>Se acerca la entrega, tu documento no queda como quieres o llevas los pendientes entre notas y mensajes. Cuéntanos qué está pasando: en Código Nexo te ayudamos a encontrar una solución práctica, desde arreglar un archivo hasta crear tu página o una aplicación sencilla.</p>
         <p className={styles.use}>Puedes delegar un pendiente concreto, aunque sea pequeño. Confirmamos qué haremos, cuánto cuesta y cuándo lo recibirás.</p>
         <a className={styles.primary} href={contact('un pendiente digital')} target="_blank" rel="noopener noreferrer">Cuéntanos qué necesitas resolver ↗</a>
         <a className={styles.emailTop} href="mailto:codigonexo.rgz@gmail.com?subject=Ayuda%20con%20un%20pendiente">Prefiero escribir por correo</a>
-        <p className={styles.trustLine}>Atención directa con Ricardo · Comunicación escrita en español o inglés · Consulta inicial sin costo</p>
+        <p className={styles.trustLine}>Atención directa de Código Nexo · Comunicación escrita en español o inglés · Consulta inicial sin costo</p>
       </div>
       <aside className={styles.offer} aria-label="Cómo funciona">
         <p>PENDIENTES PEQUEÑOS, ACUERDOS CLAROS</p>
